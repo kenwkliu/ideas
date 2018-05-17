@@ -1,0 +1,9 @@
+Rule based: 
+  pros: direct, specific, accurate, capture domain knowledges
+  cons: not scalable, need manual input, 
+  
+  
+Machine Learn:
+  pros: automatic, scalable, discover hidden rules
+  cons: need a lot of labelled data
+  
