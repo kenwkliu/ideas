@@ -11,7 +11,7 @@ Parser: understands the JD as much as possible and output keywords
   
 Matcher: Based the the Parser keywords and pick the matched CVs
 
-Ranker: sort the CVs according to the relevance
+Ranker: sort the CVs according to relevance
 
 Each of the component can have Rule Based and/or ML (Machine Learn) part
 
@@ -22,5 +22,7 @@ Rule based:
   
   
 Machine Learn:
-  pros: automatic, scalable, discover hidden rules
-  cons: need a lot of labelled data
+  pros: automatic, scalable, discover hidden/new relationship
+  cons: need a lot of labelled data, hard to achieve high accurancy and low variance
+  
+  
