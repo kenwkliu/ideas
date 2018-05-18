@@ -1,3 +1,21 @@
+Objectives
+  JD -> Ranked CVs
+  
+  
+[Systems]:
+
+JD -> [Parser] -> Keywords -> [Matcher] -> Selected CV --> [Ranker] --> Ranked CVs
+
+Parser: understands the JD as much as possible and output keywords
+  e.g. [job: IT, seniority: senior, role: development]
+  
+Matcher: Based the the Parser keywords and pick the matched CVs
+
+Ranker: sort the CVs according to the relevance
+
+Each of the component can have Rule Based and/or ML (Machine Learn) part
+
+
 Rule based: 
   pros: direct, specific, accurate, capture domain knowledges
   cons: not scalable, need manual input, 
@@ -6,4 +24,3 @@ Rule based:
 Machine Learn:
   pros: automatic, scalable, discover hidden rules
   cons: need a lot of labelled data
-  
