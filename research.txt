@@ -1,0 +1,328 @@
+Notes
+------
+Regularization, any component in the cost function that penalizes the complexity of the model provides regularization
+
+Imbalance dataset: accuracy is not enough
+
+
+<<On the Origin of Deep Learning>>
+Neural Network Universal Function Approx vs Fourier series approximation (every function curve can be decomposed into the sum of many simpler curves) Note: approximation cannot guarantee an exact representation
+
+for a shallow network, the representation power can only grow polynomially with respect to the number of neurons, but for deep architecture, the representation can grow exponentially with respect to the number of neurons. They also related their conclusion to VC-dimension of neural networks
+	
+depth of a neural network is exponentially more valuable than the width of a neural network, for a standard MLP with any popular activation functions.
+
+increasing the layers -> increased difficulty of learning proper parameters; Backpropagation: searching parameters for a neural network
+
+The recurrent structure makes traditional backpropagation infeasible because of that with the recurrent structure, there is not an end point where the backpropagation can stop. Intuitively, one solution is to unfold the recurrent structure and expand it as a feedforward neural network with certain time steps and then apply traditional backpropagation onto this unfolded neural network. This solution is known as Backpropagation through Time (BPTT)
+
+All the weights are parameters that need to be learned during training. Therefore, theoretically, LSTM can learn to memorize long time dependency if necessary and can learn to forget the past when necessary, making itself a powerful model.
+
+Rprop: does not fully utilize the information of gradient, but only considers the sign of it
+
+AdaGrad: adaptive learning rate mechanism that assigns higher learning rate to the parameters that have been updated more mildly and assigns lower learning rate to the parameters that have been updated dramatically
+
+AdaDelta: extension of AdaGrad that aims to reducing the decaying rate of learning rate
+
+Adam (Adaptive Moment Estimation): combination momentum method and AdaGrad method, but each component are re-weighted at time step t
+
+Dropout: randomly dropping out some of the units while training. seen as an efficient way to perform model averaging across a large number of different neural networks, where overfitting can be avoided with much less cost of computation
+
+Batch Normalization: addressed internal covariate shift (the change in the input distribution to a learning system. This leads to change in the input distribution to internal layers of the deep network)
+
+
+<<Deep Learning with Python>>
+- machine learning is technically searching for useful representations of some input data, within a predefined space of possibilities, using guidance from a feedback signal.
+
+- deep learning is, technically: a multistage way to learn data representations
+
+- shallow learning—only involved transforming the input data into one or two successive representation spaces, usually via simple transformations such as high-dimensional non-linear projections (SVMs) or decision trees
+
+- But the refined representations required by complex problems generally can’t be attained by such techniques. As such, humans had to go to great lengths to make the initial input data more amenable to processing by these methods: they had to manually engineer good layers of representations for their data. This is called feature engineering
+
+-What is transformative about deep learning is that it allows a model to learn all layers of representation jointly, at the same time, rather than in succession (greedily, as it’s called).
+
+- With joint feature learning, whenever the model adjusts one of its internal features, all other features that depend on it automatically adapt to the change, without requiring human intervention
+
+- deep-learning models can be trained on additional data without restarting from scratch, making them viable for continuous online learning
+
+Steps
+1. Draw a batch of training samples x and corresponding targets y.
+2. Run the network on x (a step called the forward pass) to obtain predictions y_pred.
+3. Compute the loss of the network on the batch, a measure of the mismatch between y_pred and y.
+4. Compute the gradient of the loss with regard to the network’s parameters (a backward pass).
+5. Move the parameters a little in the opposite direction from the gradient—for example W = step * gradient—thus reducing the loss on the batch a bit.
+
+
+Quantities used for normalizing the test data are computed using the training data. You should never use in your workflow any quantity computed on the test data, even for something as simple as data normalization.
+
+In general, the less training data you have, the worse overfitting will be, and using a small network is one way to mitigate overfitting.
+
+For regression: The network ends with a single unit and no activation (it will be a linear layer). This is a typical setup for scalar regression (a regression where you’re trying to predict a single continuous value).
+
+Applying an activation function would constrain the range the output can take; for instance, if you applied a sigmoid activation function to the last layer, the network could only learn to predict values between 0 and 1. Here, because the last layer is purely linear, the network is free to learn to predict values in any range.
+
+
+The topology of a network defines a hypothesis space. Machine learning as “searching for useful representations of some input data, within a predefined space of possibilities, using guidance from a feedback signal.” By choosing a network topology, you constrain your space of possibilities (hypothesis space) to a specific series of tensor operations, mapping input data to output data
+
+Data preprocessing aims at making the raw data at hand more amenable to neural networks. This includes vectorization, normalization, handling missing values, and feature extraction
+	
+	vectorization: tensors of floating-point (or integer) data 
+	
+	normalization: normalize each feature independently 
+	
+	feature extraction: to make the algorithm work better by applying hardcoded (nonlearned) transformations to the data before it goes into the model; making a problem easier by expressing it in a simpler way. It usually requires understanding the problem in depth
+	
+Note that it’s not always possible to achieve statistical power. If you can’t beat a random baseline after trying multiple reasonable architectures, it may be that the answer to the question you’re asking isn’t present in the input data. Remember that you make two hypotheses:
+	You hypothesize that your outputs can be predicted given your inputs.
+	You hypothesize that the available data is sufficiently informative to learn the relationship between inputs and outputs.
+
+For balanced-classification problems, where every class is equally likely, accuracy and area under the receiver operating characteristic curve (ROC AUC) are common metrics. For class-imbalanced problems, you can use precision and recall. For ranking problems or multilabel classification, you can use mean average precision.	
+	
+the ideal model is one that stands right at the border between underfitting and overfitting; between undercapacity and overcapacity. To figure out where this border lies, first you must cross it. To figure out how big a model you’ll need, you must develop a model that overfits. This is fairly easy:
+	1 Add layers.
+	2 Make the layers bigger.
+	3 Train for more epochs
+
+When you see that the model’s performance on the validation data begins to degrade, you’ve achieved overfitting. The next stage is to start regularizing and tuning the model, to get as close as possible to the ideal model that neither underfits nor overfits.
+
+
+The fundamental issue in machine learning is the tension between optimization and generalization
+	
+	Optimization refers to the process of adjusting a model to get the best performance possible on the training data
+	
+	Generalization refers to how well the trained model performs on data it has never seen before
+		To prevent a model from learning misleading or irrelevant patterns found in the training data, the best solution is to get more training data. A model trained on more data will naturally generalize better. When that isn’t possible, the next-best solution is to modulate the quantity of information that your model is allowed to store or to add constraints on what information it’s allowed to store. If a network can only afford to memorize a small number of patterns, the optimization process will force it to focus on the most prominent patterns, which have a better chance of generalizing well. The processing of fighting overfitting this way is called regularization
+
+		if the network has limited memorization resources, it won’t be able to learn this mapping as easily; thus, in order to minimize its loss, it will have to resort to learning compressed representations that have predictive power regarding the targets—precisely the type of representations we’re interested in. At the same time, keep in mind that you should use models that have enough parameters that they don’t underfit: your model shouldn’t be starved for memorization resources. There is a compromise to be found between too much capacity and not enough capacity.
+	
+	
+The whole thing hinges on a single core idea: that meaning is derived from the pairwise relationship between things (between words in a language, between pixels in an image, and so on) and that these relationships can be captured by a distance function
+	
+	
+(The limitations of deep learning)
+- Everything is a vector, i.e. everything is a point in a geometric space
+
+- Each layer in a deep learning model operates one simple geometric transformation on the data that goes through it
+
+- This complex transformation attempts to maps the input space to the target space, one point at a time. 
+
+- This transformation is parametrized by the weights of the layers, which are iteratively updated based on how well the model is currently performing	
+
+- A key characteristic of this geometric transformation is that it must be differentiable, which is required in order for us to be able to learn its parameters via gradient descent. Intuitively, this means that the geometric morphing from inputs to outputs must be smooth and continuous—a significant constraint
+
+- turning meaning into vectors, into geometric spaces, then incrementally learning complex geometric transformations that map one space to another. All you need are spaces of sufficiently high dimensionality in order to capture the full scope of the relationships found in the original data
+
+- Deep learning model is "just" a chain of simple, continuous geometric transformations mapping one vector space into another. All it can do is map one data manifold X into another manifold Y, assuming the existence of a learnable continuous transform from X to Y, and the availability of a dense sampling of X:Y to use as training data	
+	
+- deep learning models do not have any understanding of their input, at least not in any human sense.	
+	
+- our models can only perform local generalization, adapting to new situations that must stay very close from past data, while human cognition is capable of extreme generalization, quickly adapting to radically novel situations, or planning very for long-term future situations.
+
+
+JPM Research
+------------
+online prices of millions of items can be used to assess inflation, the number of customers visiting a store and transacting can give real time sales estimates, and satellite imaging can assess agricultural yields or activity of oil rigs
+
+Historically, similar data were only available at low frequency (e.g. monthly CPI, weekly rig counts, USDA crop reports, retail sales reports and quarterly earnings, etc.). Given the amount of data that is available, a skilled quantitative investor can nowadays in theory have near real time macro or company specific data not available from traditional data sources
+
+Sam Walton, founder of Walmart, in the 1950s used airplanes to fly over and count cars on parking lots to assess real estate investments
+
+Alternative datasets include 
+	- data generated by individuals (social media posts, product reviews, search trends, etc.),
+	- data generated by business processes (company exhaust data, commercial transaction, credit card data, order book data, etc.)
+	- data generated by sensors (satellite image data, foot and car traffic, ship locations, etc.).
+
+Asset Class / Investment Style (Macro, Equity Long-Short, risk premia, trend followers)
+
+Sophisticated models, if not properly guided, can overfit or uncover spurious relationships and patterns
+
+Roles of Humans and Machines: 
+	- short term trading, such as high frequency market making, humans already play a very small role
+	- medium term investment horizon, machines are becoming increasingly relevant. Machines have the ability to quickly analyze news feeds and tweets, process earnings statements, scrape websites, and trade on these instantaneously
+	- long term horizon, machines will likely not be able to compete with strong macro and fundamental human investors.
+	
+	
+Unsupervised Learning: regime identification
+
+It is often said that the goal of automation (or ‘Symbolic AI’) it is to perform tasks that are easy for people to define, but tedious to perform. On the other hand the goal of Deep Learning AI systems is to perform tasks that are difficult for people to define, but easy to perform
+
+Reinforcement learning
+	1) Explore vs. Exploit dilemma - should the algorithm explore new alternative actions that may maximize the final reward, or stick to the established one that maximizes the immediate reward. 
+	2) Credit assignment problem - given that we know the final reward only at the last step, it is not straightforward to assess which step was critical for the final outcome	
+
+Forecast Error = In-Sample Error + Model Instability + Random Error
+
+mocking of AI (Artificial Intelligence) by calling it Artificially Inflated
+
+in-sample biases
+
+Winsorizing is the transformation of statistics by limiting extreme values in the statistical data to reduce the effect of possibly spurious outliers
+
+https://www.tickdata.com/
+
+Methods of Deep Learning are critical in processing satellite images, natural language processing, and analysis of other unstructured data. In practice, front office investment professionals will likely acquire Big Data signals that are already processed with methods of Deep Learning. For example, an analyst will acquire car count as a time series, and is less likely to build a convolutional neural network framework to count cars directly from satellite image files
+
+precision: % of times the model was correct, given its output
+recall: the accuracy of the model, given the actual value
+
+Random forests improve upon this idea by averaging the output of many decision trees. Each decision tree is then fit on a small subset of training examples or is constrained to use only a small subset of input features. Averaging the output of these trees reduces variance of the overall estimator
+
+Although decision trees are intuitive and easy to understand, they tend to be very noisy. Small changes in the data can lead to different splits and completely different models. The instability of the tree renders it impractical as a prediction model by itself. Nevertheless, decision trees are useful to visualize interactions between variables
+
+We caution that principal components are not independent factors. When the returns are not jointly Gaussian, uncorrelated density does not imply independence. “Uncorrelated” means the lack of a linear relationship; “independence” is a more comprehensive statistical notion. PCA yields uncorrelated factors, but not independent ones. Independent factors can be obtained through a different technique called Independent Component Analysis (ICA).
+
+Restricted Boltzmann Machine (RBM) is a neural-network based dimensionality reduction (unsupervised learning) technique. The neurons in RBM form two layers called the visible units (reflecting returns of assets) and the hidden units (reflecting latent factors). Neurons within a layer – hidden or visible – are not connected; this is the ‘restriction’ in the restricted Boltzman machine.	
+
+Anecdotal evidence from observing winning entries at data science competitions (like Kaggle) suggests that structured data is best analyzed by tools like XGBoost and Random Forests. Use of Deep Learning in winning entries is limited to analysis of images or text
+
+The necessity of having large sample data implies that one may see application of Deep Learning to intraday or high-frequency trading before we see its application in lower frequencies.
+	
+Deep Learning finds immediate use for portfolio managers in an indirect manner. Parking lot images are analyzed using Deep Learning architectures (like convolutional neural nets) to count cars. Text in social media is analyzed using Deep Learning architectures (like long short-term memory) to detect sentiment. Such traffic and sentiment signals can be integrated directly into quantitative strategies	
+
+- JPM Reinforcement Learning
+Reinforcement Learning: one may look for a set of trading rules that maximizes PnL after 100 trades. Unlike supervised learning (which is typically a one-step process), the model doesn’t know the correct action at each step, but learns over time which succession of steps led to the highest reward at the end of the process
+		
+While most human players (and similarly traders) learn by maximizing rewards, humans tend to stop refining a strategy after a certain level of performance is reached. On the other hand, the machine keeps on refining, learning, and improving performance until it achieves perfection.
+		
+Bellman equation simply says that the maximum reward for an action in the current state is equal to the sum of the immediate reward and the maximum reward possible from the succeeding state.
+
+value function is learned via a neural network
+		
+Introduction to Learning to Trade with Reinforcement Learning
+-------------------------------------------------------------
+Supervised Learning on price movement: 
+	No liquidity in the best order book levels, network latencies, and fees, none of which the supervised model could take into account.
+	It does not imply a policy
+		what if the price had moved down? Would you have sold? Kept the position and waited? What if the price had moved up just a little bit and then moved down again? What if we had been uncertain about the prediction, for example 65% up and 35% down? Would you still have bought? How do you choose the threshold to place an order?
+	
+	need a rule-based policy that takes as input your price predictions and decides what to actually do: Place an order, do nothing, cancel an order, and so on
+
+Reinforcement Learning
+	Instead of needing to hand-code a rule-based policy, Reinforcement Learning directly learns a policy.
+	Trained directly in Simulation Environments
+	Ability to model other agents
+
+Financial time-series is a partial information game (POMDP: Partially Observable Markov Decision Process) that’s really hard even for humans - we shouldn’t expect machines and algorithms to suddenly surpass human ability there	
+
+
+https://www.mckinsey.com/global-themes/artificial-intelligence/how-artificial-intelligence-and-data-add-value-to-businesses?cid=soc-web
+Sometimes, we talk about reinforcement learning, which is a little bit like how you might train a puppy. The dog does something good, and you go, “Good dog.” It does something bad, and you go, “Bad dog.” And over time, the dog figures out what it did well, what it did poorly, and hopefully does more of the good things.		
+
+
+
+Hands-on Machine Learning with Scikit-Learn & TensorFlow
+--------------------------------------------------------
+Nonrepresentative Training Data
+Poor-Quality Data
+Irrelevant Features
+
+
+Andrew Ng: Machine Learning Yearning
+-------------------------------------
+- Your dev (validation) and test sets should come from the same distribution
+
+- Establish a single-number evaluation metric for your team to optimize
+
+- Error Analysis refers to the process of examining dev set examples that your algorithm misclassified, so that you can understand the underlying causes of the errors. This can help you prioritize projects—as in this example—and inspire new directions
+
+- Data is greater than model design, and model design is greater than parameter optimization.
+
+- If you have high variance, add data to your training set.
+
+- adding more features could increase the variance; but if you find this to be the case, then use regularization, which will usually eliminate the increase in variance
+
+- when your training set is small, feature selection can be very useful
+
+Learning curves: plots your dev set error against the number of training examples. 
+
+As the training set size increases, the dev set error should decrease. But your training set error usually increases as the training set size grows.
+
+there is a large gap between the training error and the desired performance, indicating large avoidable bias. Furthermore, the gap between the training and dev curves is small, indicating small variance
+
+
+Manning: Deep Learning and the Game of Go
+--------------------------------------------
+Traditional algorithms solve the problem directly. If you can directly write code to solve a problem, it will be easier to understand, maintain, test, and debug.
+
+You expect perfect accuracy. All complex software contains bugs, of course. But in traditional software engineering, we expect to methodically identify and fix bugs. That’s not always possible with machine learning. You can improve machine learning systems, of course; but focusing too much on a specific error often makes the overall system worse.
+
+Simple heuristics work well. If you can implement a rule that’s good enough with just a few lines of code, do so and be happy. A simple heuristic, implemented clearly, will be easy to understand and maintain. Functions that are implemented with machine learning are opaque and require a separate training process to update. (On the other hand, if you are maintaining a complicated sequence of heuristics, that’s a good candidate to replace with machine learning.)
+
+Unsupervised learning: An example of this would be outliers detection: identifying data points that don’t fit in with the general trend of the data set
+
+
+ITG
+---
+limit order posting algorithm contains a short-term alpha prediction model based on random forest classification
+
+modeling of historic volume patterns leverages a k-means clustering technique
+
+
+JPM Active Learning in Trading Algo
+-------------------------------
+page 39: Evolution 
+
+- avoids hand crafting of logic / manual overfitting
+- allows for strategies to be optimised around characteristics of individual stocks
+- but this is not just about data and compute : domain expertise critical for applications in finance
+
+
+
+Others
+-------
+Neural nets are just thoughtless fuzzy pattern recognizers, and as useful as fuzzy pattern recognizers can be—hence the rush to integrate them into just about every kind of software—they represent, at best, a limited brand of intelligence, one that is easily fooled.
+
+
+Thoughts
+-------
+- Discover from data and only data can provide it
+- you think there is some relation and you want to find "how" (or at least to disapprove your thinking)
+
+- Deep Learning need to learn with fewer data
+
+- Machine Learning with experience in memory (no need to train from the beginning every time), aka accumulate knowledge
+
+- Similar to Algo trading 
+	Not as good as people but cut cost
+		
+	automate some "dealer" ("analysts")
+			
+	something computer is genuinely better (speed and read many data)
+		
+		
+	
+Ideas
+-----
+Volume predict (volatile) -> protect investor 
+historical (horizontal) - more accurate predictions
+real time (vertical) - volume spike (volatility): 
+	learn from news / sentiment analysis (Reuters TRMI or Amareos) 
+	+ order book / tech indicator
+	
+	(game theory model the dynamic and uncertainty - too much research) 
+	
+
+Automate the Skype to support (auto log grabbing)
+	
+
+Social Media based Index
+	Open Data (Beach quality, Air Pollution traffic cam) -> ETF
+
+Social Media -> Equity Research
+                Content farm
+                Sentiment Analysis
+                Keyword Correlation
+                Market basket (recommendation and association)
+				
+Text mining - read finance report
+				
+Corporate knowledge base: Emails, Logs, IM, Wiki, docs
+                fast index & search
+                socring relevance
+                chatbot Q&A
+
+AI alerts/monitoring, advice Anomaly Detection
+				
+Relax Trader Emotion Stress (Facial Recognition)
+
