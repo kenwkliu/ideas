@@ -10,10 +10,15 @@ Parser: understands the JD as much as possible and output keywords
   e.g. [job: IT, seniority: senior, role: development]
   
 Matcher: Based the the Parser keywords and pick the matched CVs
+Default rules
+Expert rules
+ML rules
 
 Ranker: sort the CVs according to relevance
+Expert ranks
+ML ranks
 
-Each of the component can have Rule Based and/or ML (Machine Learn) part
+Each of the component can have Rule Based (Expert) and/or ML (Machine Learn) part
 
 
 Rule based: 
