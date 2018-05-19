@@ -10,7 +10,6 @@ Parser: understands the JD as much as possible and output keywords
   e.g. [job: IT, seniority: senior, role: development]
   
 Matcher: Based the the Parser keywords and pick the matched CVs
-Default rules
 Expert rules
 ML rules
 
