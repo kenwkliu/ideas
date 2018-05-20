@@ -1,10 +1,10 @@
 Objectives
-  JD -> Ranked CVs
+  JD (User Prefs) -> Ranked CVs
   
   
 [Systems]:
 
-JD -> [Parser] -> Keywords -> [Matcher] -> Selected CV --> [Ranker] --> Ranked CVs
+JD (User Prefs) -> [Parser] -> Keywords -> [Matcher] -> Selected CV --> [Ranker] --> Ranked CVs
 
 Parser: understands the JD as much as possible and output keywords
   e.g. [job: IT, seniority: senior, role: development]
@@ -15,7 +15,7 @@ ML rules
 
 Ranker: sort the CVs according to relevance
 Expert ranks
-ML ranks
+ML ranks: 
 
 Each of the component can have Rule Based (Expert) and/or ML (Machine Learn) part
 
