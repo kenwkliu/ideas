@@ -1,0 +1,21 @@
+Learning to Ranking Candidate.pdf
+==================================
+- Workflow
+The automatic CV parsing extracts relevant information such as
+name, address, skills and previous work experience from original
+CVs (e. g. given as PDF or DOC documents) and transforms
+them into a searchable semi-structured format.
+
+The search engine indexes parsed CVs and enables searching
+with semi-structured queries as well as through search facets
+and tag clouds. CVs are assigned a relevance score w.r.t. the
+query by the search engine and are ranked accordingly.
+
+Automatic vacancy parsing extracts relevant information from
+vacancies such as the title of the advertised position, skill requirements
+and other job-opening-related keywords.
+
+The query generation component automatically generates semistructured
+search queries for finding matching candidates in the
+document collection.
+
