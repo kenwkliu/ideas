@@ -1,0 +1,26 @@
+the keyword correlation (co-occurrence) is like word embedding
+
+Misleading example:
+https://www.independent.co.uk/news/world/americas/us-elections/mogia-ai-system-that-correctly-predicted-last-3-us-elections-says-donald-trump-will-win-artificial-a7384671.html?amp
+
+Modem alchemy - pray it work
+
+slide 1: Include key datatact stats, COL biz plan, 
+
+slide 2: Socal Keyword Index 
+
+Ensemble: wisdom of the crowd, 三個臭皮匠，勝過一個諸葛亮 (3 idiots are better than one smart guy)?
+Is it a race between rabbit & tortoise, but tortoise cannot fly (limitation of the model)
+
+Trading:
+- Trader said, retail driven market 5, 10 price will be thick queue, place a tick above -> data of hidden psychology
+- Shorter the duration - easier to predict. Combined signals, combinatorial, grid search
+- Many mini Black swan (long tail event) rip off the small profit(s)
+
+Word2Vec show in Text Similarity: http://projector.tensorflow.org/
+
+Tf-idf: term frequency-inverse document frequency, and the tf-idf weight is a weight often used in information retrieval and text mining. This weight is a statistical measure used to evaluate how important a word is to a document in a collection or corpus. The importance increases proportionally to the number of times a word appears in the document but is offset by the frequency of the word in the corpus. 
+
+  Example: Consider a document containing 100 words wherein the word cat appears 3 times. The term frequency (i.e., tf) for cat is then (3 / 100) = 0.03. Now, assume we have 10 million documents and the word cat appears in one thousand of these. Then, the inverse document frequency (i.e., idf) is calculated as log(10,000,000 / 1,000) = 4. Thus, the Tf-idf weight is the product of these quantities: 0.03 * 4 = 0.12.
+  
+
