@@ -56,6 +56,17 @@ exploit these returns via a systematic trading model and execution infrastructur
 Alpha is difficult to find, as by definition once it is well-known it decays and seeks to be
 an uncorrelated source of returns (like Orgasm, it goes away if thinking it too much)
 
+Signal building blocks : for example, the bid/ask imbalance for short term price movement, not going to help you to make money (bid/ask spread) But can be used in the fine-tuning the strategy entry and exit timing
+
+How much you should help the model to learn
+
+- Predicting stock going up or down is too idealistic, generate "better" signals (build blocks)
+
+- Instead of finding quick answer, rather it can disapprove it quickly
+
+- Instead of know which factor , rather it can find the right combinations (magic number) of those factor
+
+
 Advance Algorithm Trading book
 ------------------------------
 Bayesian Statistics takes a different approach and instead considers probability as a measure of belief
@@ -89,6 +100,60 @@ Historical data how far going back vs regime switching
 Reading many roughly vs a few precisely (Phone Survey vs Social Media Analytics)
 
 Observer Effect: the observations made for the measurement of the state of the system change the very state they intend to measure. Financial markets, where the primary observations come into the picture by way of order submissions, represent a poster-child for the Observer Effect – increasingly so due to the immense computational power and growing sophistication behind trading operations. Thus, for observations to render value in environments such as this, one needs to act simultaneously while observing them.
+
+Companies
+-------------
+https://www.interactivebrokers.com
+https://www.multicharts.com
+
+Blogs
+-----
+https://www.elitetrader.com/et/
+http://www.trade2win.com/
+http://www.traderslaboratory.com/forums/
+
+Numer.ai
+--------
+https://numer.ai/
+https://medium.com/numerai/numerais-master-plan-1a00f133dba9
+https://numer.ai/learn
+https://medium.com/numerai/encrypted-data-for-efficient-markets-fffbe9743ba8
+
+Using just Yahoo! Finance data to build a model is like using only one pixel in an image to learn to recognize handwritten digits
+
+Once you have a model in finance that works, you hide it. You hide the techniques you used to build it. You hide the methods you used to improve your data. And most importantly, you hide the data. The financial incentive for secrecy is strong.
+
+Numerai is now trading user generated predictions in our hedge fund
+
+https://medium.com/numerai/invisible-super-intelligence-for-the-stock-market-3c64b57b244c
+
+(AdaBoost Example?) With many different solutions to the same problem, Numerai is able to combine each model into a meta model just like Random Forests combines decision trees into a forest.
+
+No data scientist on Numerai has a machine learning model that is better than all the other models combined. So Numerai is not a search for the ‘best’ model; it is a platform to synthesize many different models with many different characteristics. Although data scientists compete to place on the leaderboard, the competition is designed to collect models. Numerai is not really a competition; it’s an invisible collaboration to build the meta model.
+
+https://medium.com/@pycy/million-dollar-salaries-for-ai-researchers-well-we-quants-have-seen-this-movie-before-8e7af51f6c63
+
+Different funds take varying approaches to the arms race. While funds such as the ultra-successful and ultra-secretive Renaissance Technologies continue to outperform by hiring relatively few (<100) elite researchers, others such as WorldQuant have taken the opposite approach, hiring teams of hundreds of mutually segregated quants working independently, allowing the firm to collect to the order of 100,000 alpha signals. Still other funds such as Quantopian take this to the extreme — and have attempted to completely crowd-source quantitative research (with questionable success). Vs Social Trading
+
+
+AI study
+--------
+Baseline comparison:  Bid/Ask imbalance vs 50/50 is not correct (vs Bid>Ask -> Up; Bid<Ask-> Down)
+
+https://www.cnbc.com/2018/04/09/chinese-ai-startup-sensetime-raises-600-million-from-alibaba-others.html
+https://chiefscientist.org/francois-chollet-in-conversation-with-alexy-khrabrov-84f0358ec651
+
+Not generalize well  (一理通,百理明)
+only local generalization generalize to things that are very close to what you’ve been trained on and that’s extremely limiting. That’s the reason why deep learning is only going to work well on very large datasets.
+
+We need a dense sampling of input/output space to learn a specific task. A very narrow task
+
+This abstract model comes from grounding, comes from the human experience. And the deep learning model has no access to human experiences. It just has access to its training data. So, again, all they’re doing is mapping the statistics of their training data. And it’s not what humans do. First, because humans have access to these very different set of experiences, and, second, because they learn in very different ways. Humans can automatically turn what they perceive into abstract models. They can form abstract models automatically, which is something you cannot do with machine learning today.
+
+But because it has no access to abstract rules, it’s not going to be able to generalize strongly.
+
+AlphaGo Video timing and (show and ask) why it take a lot of time to think at the beginning
+sunspring youtube
 
 
 
