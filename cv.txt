@@ -1,6 +1,7 @@
 Objectives
   JD (User Prefs) -> Ranked CVs
   
+  User Prefs to express subjectivites (personalised search - learn from history)
   
 [Systems]:
 
@@ -18,6 +19,12 @@ Expert ranks
 ML ranks: 
 
 Each of the component can have Rule Based (Expert) and/or ML (Machine Learn) part
+
+TF-IDF vs Word2Vec (Frequency vs Co-occurence)
+
+Define the feedback loop: how to collect the labelled data
+
+Label: Relevance score
 
 
 Rule based: 
