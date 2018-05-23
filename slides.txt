@@ -22,5 +22,73 @@ Word2Vec show in Text Similarity: http://projector.tensorflow.org/
 Tf-idf: term frequency-inverse document frequency, and the tf-idf weight is a weight often used in information retrieval and text mining. This weight is a statistical measure used to evaluate how important a word is to a document in a collection or corpus. The importance increases proportionally to the number of times a word appears in the document but is offset by the frequency of the word in the corpus. 
 
   Example: Consider a document containing 100 words wherein the word cat appears 3 times. The term frequency (i.e., tf) for cat is then (3 / 100) = 0.03. Now, assume we have 10 million documents and the word cat appears in one thousand of these. Then, the inverse document frequency (i.e., idf) is calculated as log(10,000,000 / 1,000) = 4. Thus, the Tf-idf weight is the product of these quantities: 0.03 * 4 = 0.12.
-  
+
+ITG
+---
+limit order posting algorithm contains a short-term alpha prediction model based on random forest classification
+modeling of historic volume patterns leverages a k-means clustering technique
+
+JPM Active Learning
+-------------------------------
+- avoids hand crafting of logic / manual overfitting
+- allows for strategies to be optimised around characteristics of individual stocks
+- but this is not just about data and compute : domain expertise critical for applications in finance
+
+Why Backtest not good
+--------------------
+1.	Each backtest is always overfit to some extent
+2.	Transactions cost, Spread 
+3.	No Liquidity at that price
+4.	Volatility and latency - can’t react fast enough (not have the best in class infra) 
+5.	(mini) Black swan (win candy, lose factory)
+
+==> Paper Trading
+
+Amateurs develop individual strategies, believing that there is such a thing as a magical formula for riches, Combine multiple predictions into a single bet
+
+confuse statistical flukes with patterns. This fact, combined with the low signal-to-noise ratio that characterizes finance
+
+BlackJack (player lost immediately when go bust) vs CBBC (Callable bull/bear contract)
+
+alpha– streams of uncorrelated risk-adjusted returns
+exploit these returns via a systematic trading model and execution infrastructure.
+
+Alpha is difficult to find, as by definition once it is well-known it decays and seeks to be
+an uncorrelated source of returns (like Orgasm, it goes away if thinking it too much)
+
+Advance Algorithm Trading book
+------------------------------
+Bayesian Statistics takes a different approach and instead considers probability as a measure of belief
+
+The main idea in Time Series Analysis is that of serial correlation (momentum, trending following, “mean” reversion, seasonality, volatility clustering, long-memory effects)
+
+Machine Learning - fusion of computational methods–mainly optimisation techniques–within a rigourous probabilistic framework. It provides the ability to "learn a model from data".
+
+Bayesian Approach stochastic volatility - regime detection
+
+Cointegration – pairs trading
+
+https://www.quantstart.com/qstrader
+
+Andrew Ng has gone on the record stating that worrying about superintelligence is like worrying about overpopulation on Mars. One day, humanity is likely to reach Mars. When enough people land on Mars, overcrowding will likely exist and may even be a very serious problem. None of this changes the fact that Mars today is an empty wasteland.
+
+
+Sentiment Case: Study Smart Beta 
+--------------------------------
+https://socialmarketanalytics.wordpress.com/2015/10/27/social-media-and-smart-beta/
+•	SPDR SPY ETF is a cap-weighted ETF which closely replicates the performance of the S&P 500.
+•	Develop a “smart beta” strategy using the social media sentiment levels of individuals ETF constituents to rebalance the weights of the constituents in the ETF while keeping the Assets under Management constant
+•	The transaction cost assumption is ignored for both the original and the enhanced ETF
+•	Strategy 1: Looking at the sentiment levels an hour before the close (2:55 PM Eastern Time) and re-balancing the weights according to that. The stocks were bought or sold (to reduce position as per new weight only, NO short selling) at the close of the day and the positions were maintained until the next day when the re-balancing was performed again.
+•	Strategy 2:  use a “lagged” sentiment (the lag being a day). So, for adjusting the weights today, we looked at the sentiment at 2:55 PM yesterday, and changed the positions based on that.
+
+Stochastic vs not enough feature
+
+Historical data how far going back vs regime switching
+
+Reading many roughly vs a few precisely (Phone Survey vs Social Media Analytics)
+
+Observer Effect: the observations made for the measurement of the state of the system change the very state they intend to measure. Financial markets, where the primary observations come into the picture by way of order submissions, represent a poster-child for the Observer Effect – increasingly so due to the immense computational power and growing sophistication behind trading operations. Thus, for observations to render value in environments such as this, one needs to act simultaneously while observing them.
+
+
 
