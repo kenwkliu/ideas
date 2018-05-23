@@ -19,3 +19,9 @@ The query generation component automatically generates semistructured
 search queries for finding matching candidates in the
 document collection.
 
+- Relevant
+match-making system:
+  Also from candidate point of view: whether job suitable as their next career step
+  it is not only the preferences of the recruiter that matters but also the preferences of the candidate
+  Take into account the probability of the candidate accepting the job offered to them as well as the probability of the candidate remaining with the organisation for long term, for both of which they have explicit historical data to learn from.
+  
