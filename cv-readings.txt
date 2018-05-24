@@ -25,3 +25,29 @@ match-making system:
   it is not only the preferences of the recruiter that matters but also the preferences of the candidate
   Take into account the probability of the candidate accepting the job offered to them as well as the probability of the candidate remaining with the organisation for long term, for both of which they have explicit historical data to learn from.
   
+
+Word2Vec
+========
+Count-based methods compute the statistics of how often some word co-occurs with its neighbor words in a large text corpus, and then map these count-statistics down to a small, dense vector for each word
+
+Predictive models directly try to predict a word from its neighbors in terms of learned small, dense embedding vectors (considered parameters of the model).
+
+CBOW (continuous bag-of-words): architecture, the model predicts the current word from a window of surrounding context words
+
+Skip-gram: predict surrounding context words based on the current word.
+
+
+skill2Vec
+=========
+input layer: one-hot encoding with size of the dictionary
+output layer: softmax classifier, predict words within window size before and after current word
+params: vector dimensionality and window size
+
+The author found that increasing the window size improves the quality of the word vector, and yet it increases the computational complexity
+
+Dataset: 1. standard skills dictionary for the parser 2. skills for training model
+
+treated our skills as words in Word2Vec model.
+In this study, with the documents contain only the skills,
+we chose the maximum window size, implied that every skills in the same job description are related to each other
+
