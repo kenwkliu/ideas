@@ -51,3 +51,15 @@ treated our skills as words in Word2Vec model.
 In this study, with the documents contain only the skills,
 we chose the maximum window size, implied that every skills in the same job description are related to each other
 
+AI to idenitying skill relationship
+=====================================
+- relationship between the knowledge or skills based on the learning data available
+- transform an input skill to its contextual skills. In our approach, contextual skills refer to the neighbours of a skill in the sequence
+- find a mapping from a skill to a vector in a new vector space that preserves the structure between different skills
+- This mapping, called an “embedding,” allows the identification of the relationship between skills by projecting the skills onto the new vector space. The results of an embedding can also be visualized by further projecting the vectors in the new space onto a two-dimensional space.
+- The rationale of skill2vec is that for each skill St in the sequence, the contextual skills are defined as skills for solving the neighboring tasks within a window of size W (skip-gram approach)
+
+Mine related tech skills
+========================
+We also tried using the resume dataset, but the results were of a lower quality, as the skills extracted from resumes can be from different jobs
+
