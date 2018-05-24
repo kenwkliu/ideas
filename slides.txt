@@ -1,3 +1,17 @@
+The success of ML project is where the you have has a lot of (good/labelled) data (like Facebook, Google) or you have some unique data that generate from the biz. ML algos are standardized, it's the data that embedd the knowledge and choose suitable model to extract it
+
+Some Big Data techniquies are solving internet scale data volume and growth and doesn't mean you will use it directly
+Deep Learning are able to understand massive amout of data and that doesn't mean you will use it directly
+
+AI replace jobs, works 3-day a week: Social Issues -> Socially solve;  tech is tech
+Just because we have open government data doesn’t mean we don’t have corruption
+
+Training time (vs predict time) is generally longer and then cross validation is more time consumption when you have big data set to train
+
+Human Data Labeller: https://theinitium.com/article/20180522-mainland-data-annotator/
+
+Add "Buy Likes" Phone images to Datatact FB a/c and the Fake Sentiment
+
 HK companies from class Web site
 
 the keyword correlation (co-occurrence) is like word embedding
@@ -5,14 +19,13 @@ the keyword correlation (co-occurrence) is like word embedding
 Misleading example:
 https://www.independent.co.uk/news/world/americas/us-elections/mogia-ai-system-that-correctly-predicted-last-3-us-elections-says-donald-trump-will-win-artificial-a7384671.html?amp
 
-Modem alchemy - pray it work
-
 slide 1: Include key datatact stats, COL biz plan, 
 
 slide 2: Socal Keyword Index 
 
-Ensemble: wisdom of the crowd, 三個臭皮匠，勝過一個諸葛亮 (3 idiots are better than one smart guy)?
+Ensemble / Social Trading / Numer.ai: wisdom of the crowd, 三個臭皮匠，勝過一個諸葛亮 (3 idiots are better than one smart guy)?
 Is it a race between rabbit & tortoise, but tortoise cannot fly (limitation of the model)
+
 
 Trading:
 - Trader said, retail driven market 5, 10 price will be thick queue, place a tick above -> data of hidden psychology
