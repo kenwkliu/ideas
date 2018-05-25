@@ -1,3 +1,5 @@
+Add to History of AI: http://houseofbots.com/news-detail/2754-1-a-take-on-deep-learning
+
 The success of ML project is where the you have has a lot of (good/labelled) data (like Facebook, Google) or you have some unique data that generate from the biz. ML algos are standardized, it's the data that embedd the knowledge and choose suitable model to extract it
 
 Some Big Data techniquies are solving internet scale data volume and growth and doesn't mean you will use it directly
