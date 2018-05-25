@@ -36,4 +36,5 @@ Machine Learn:
   pros: automatic, scalable, discover hidden/new relationship
   cons: need a lot of labelled data, hard to achieve high accurancy and low variance
   
-  
+job2vec
+JD + top 100 words of CV as a unit of document (weighted by labelled relevance score)
