@@ -38,3 +38,4 @@ Machine Learn:
   
 job2vec
 JD + top 100 words of CV as a unit of document (weighted by labelled relevance score)
+each labelled data should be prepared by at least 2 person for cross checking and reduce variance
