@@ -24,8 +24,6 @@ TF-IDF vs Word2Vec (Frequency vs Co-occurence)
 
 Define the feedback loop: how to collect the labelled data
 
-Label: Relevance score
-
 
 Rule based: 
   pros: direct, specific, accurate, capture domain knowledges
@@ -43,7 +41,14 @@ Watch-Dog
 If a new CV come in that's within the existing top [x], email the notification
 
 Labelling 
-each labelled data should be prepared by at least 2 person for cross checking and reduce variance
+- each labelled data should be prepared by at least 2 person for cross checking and reduce variance
+- Meaningful phrase: Java Developer, Marketing Manager (can build a bi-gram collocation extraction tool)
+- Synonymous: Marketing Manager is also Culture manager
+- Preference: Goldman prepare Morgan Stanley, Credit Suisse
+- For each JD/CVs: relevance score
 
 Test
-automate the testing and benchmark
+- automate the testing and benchmark
+
+Personalized Search
+- Like buillding recommendation system (collaborative filtering)
