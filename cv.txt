@@ -38,4 +38,12 @@ Machine Learn:
   
 job2vec
 JD + top 100 words of CV as a unit of document (weighted by labelled relevance score)
+
+Watch-Dog
+If a new CV come in that's within the existing top [x], email the notification
+
+Labelling 
 each labelled data should be prepared by at least 2 person for cross checking and reduce variance
+
+Test
+automate the testing and benchmark
