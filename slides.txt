@@ -1,3 +1,5 @@
+Add VWAP video link
+
 GAN: reconstruct blurry or pixelated images without seeing the original
 https://news.developer.nvidia.com/ai-can-now-reconstruct-blurry-images/
 
