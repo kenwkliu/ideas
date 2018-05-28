@@ -63,3 +63,9 @@ Mine related tech skills
 ========================
 We also tried using the resume dataset, but the results were of a lower quality, as the skills extracted from resumes can be from different jobs
 
+Relevant Serach: With Application of Solr and Elasticsearch
+============================================================
+latent semantic analysis
+latent Dirichlet allocation
+Word2vec
+
