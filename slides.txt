@@ -1,4 +1,14 @@
-PageRank: Google realized that relevance for the web depended on trust, not just text
+GAN: reconstruct blurry or pixelated images without seeing the original
+https://news.developer.nvidia.com/ai-can-now-reconstruct-blurry-images/
+
+Facial Recognition example: Thanks To AI, A 3rd Person Is Arrested Following A Pop Superstar's Concert https://www.npr.org/sections/therecord/2018/05/23/613692526/thanks-to-ai-a-3rd-person-is-arrested-following-a-pop-superstars-concert
+
+Quantamental Investing
+
+Reinforcement Learning: Add JPM Active trading slides
+The Advantage of Doubling: A Deep Reinforcement Learning Approach to Studying the Double Team in the NBA: https://arxiv.org/abs/1803.02940
+
+In Phrasal translate - add the good data source for training (the movie subtitlies) 
 
 Add to History of AI: http://houseofbots.com/news-detail/2754-1-a-take-on-deep-learning
 
@@ -37,10 +47,14 @@ Trading:
 - Many mini Black swan (long tail event) rip off the small profit(s)
 
 Word2Vec show in Text Similarity: http://projector.tensorflow.org/
+Demo the Gensim example
+
+TF-IDF ranking is that a document importance grows with the local frequency and global rarity of its terms
 
 Tf-idf: term frequency-inverse document frequency, and the tf-idf weight is a weight often used in information retrieval and text mining. This weight is a statistical measure used to evaluate how important a word is to a document in a collection or corpus. The importance increases proportionally to the number of times a word appears in the document but is offset by the frequency of the word in the corpus. 
 
   Example: Consider a document containing 100 words wherein the word cat appears 3 times. The term frequency (i.e., tf) for cat is then (3 / 100) = 0.03. Now, assume we have 10 million documents and the word cat appears in one thousand of these. Then, the inverse document frequency (i.e., idf) is calculated as log(10,000,000 / 1,000) = 4. Thus, the Tf-idf weight is the product of these quantities: 0.03 * 4 = 0.12.
+
 
 ITG
 ---
