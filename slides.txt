@@ -1,11 +1,19 @@
+Demos:
+http://ml-playground.com/
+http://arogozhnikov.github.io/2016/04/28/demonstrations-for-ml-courses.html
+
+Traditional linguistic like learning grammar from school
+Word Emedding like native speaker (doesn't learn grammar) just pick up on what other people talk
+
+Word Vector Emedding: add "大交合" example
+Hash function for String Image
+
 Add VWAP video link
 
 GAN: reconstruct blurry or pixelated images without seeing the original
 https://news.developer.nvidia.com/ai-can-now-reconstruct-blurry-images/
 
 Facial Recognition example: Thanks To AI, A 3rd Person Is Arrested Following A Pop Superstar's Concert https://www.npr.org/sections/therecord/2018/05/23/613692526/thanks-to-ai-a-3rd-person-is-arrested-following-a-pop-superstars-concert
-
-Quantamental Investing
 
 Reinforcement Learning: Add JPM Active trading slides
 The Advantage of Doubling: A Deep Reinforcement Learning Approach to Studying the Double Team in the NBA: https://arxiv.org/abs/1803.02940
@@ -190,5 +198,5 @@ But because it has no access to abstract rules, it’s not going to be able to g
 AlphaGo Video timing and (show and ask) why it take a lot of time to think at the beginning
 sunspring youtube
 
-
+Quantamental Investing
 
