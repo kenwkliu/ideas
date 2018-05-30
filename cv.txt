@@ -45,8 +45,10 @@ Labelling
 - Meaningful phrase: Java Developer, Marketing Manager (can build a bi-gram collocation extraction tool)
 - Synonymous: Marketing Manager is also Culture manager
 - Preference: Goldman prepare Morgan Stanley, Credit Suisse
-- For each JD/CVs: relevance score
-
+- For each JD/CVs: relevance score (label should be as fine details as possible)
+  --> For example: JD desciption is better than general job function (as we can group JD back to job function but not the other way round)
+    Relevance score is better than Y/N
+  
 
 Test and Performance metrics
 ============================
