@@ -1,12 +1,18 @@
+K-mean clustering example
+https://towardsdatascience.com/using-unsupervised-learning-to-plan-a-paris-vacation-geo-location-clustering-d0337b4210de
+
+Market Basket Image: https://cdn-images-1.medium.com/max/1000/1*ds2nrBDoIYpf1xxe9GI7Bg.jpeg
+
+Number of hidden layers and neurons
+https://www.heatonresearch.com/2017/06/01/hidden-layers.html
+
 Demos:
 http://ml-playground.com/
 http://arogozhnikov.github.io/2016/04/28/demonstrations-for-ml-courses.html
+https://js.tensorflow.org/
 
 Traditional linguistic like learning grammar from school
 Word Emedding like native speaker (doesn't learn grammar) just pick up on what other people talk
-
-Word Vector Emedding: add "大交合" example
-Hash function for String Image
 
 Add VWAP video link
 
@@ -34,8 +40,6 @@ Training time (vs predict time) is generally longer and then cross validation is
 
 Human Data Labeller: https://theinitium.com/article/20180522-mainland-data-annotator/
 
-Add "Buy Likes" Phone images to Datatact FB a/c and the Fake Sentiment
-
 HK companies from class Web site
 
 the keyword correlation (co-occurrence) is like word embedding
@@ -43,13 +47,9 @@ the keyword correlation (co-occurrence) is like word embedding
 Misleading example:
 https://www.independent.co.uk/news/world/americas/us-elections/mogia-ai-system-that-correctly-predicted-last-3-us-elections-says-donald-trump-will-win-artificial-a7384671.html?amp
 
-slide 1: Include key datatact stats, COL biz plan, 
-
 slide 2: Socal Keyword Index 
 
-Ensemble / Social Trading / Numer.ai: wisdom of the crowd, 三個臭皮匠，勝過一個諸葛亮 (3 idiots are better than one smart guy)?
 Is it a race between rabbit & tortoise, but tortoise cannot fly (limitation of the model)
-
 
 Trading:
 - Trader said, retail driven market 5, 10 price will be thick queue, place a tick above -> data of hidden psychology
@@ -200,3 +200,4 @@ sunspring youtube
 
 Quantamental Investing
 
+Classifiers are just complicated if-statements
