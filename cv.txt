@@ -54,8 +54,15 @@ Personalized Search
 - Like buillding recommendation system (collaborative filtering)
 
 
-Algo
-========
+Matcher Expert Rules
+====================
+search queries to Elasticsearch for CVs
+  e.g: {work-exp contains ("Marketing Manager" or "Culture manager")
+        and company contains ("Credit Suisse" or "Morgan Stanely)}
+
+
+Ranker Algo: job2vec
+======================
 1. job2vec (j2v): Train by a set of {JD + top[x] words of CV} 
   - top[x] words means the recent experience are most relevant
   - weighted by the labelled score
