@@ -52,3 +52,30 @@ Test
 
 Personalized Search
 - Like buillding recommendation system (collaborative filtering)
+
+
+Algo
+========
+1. job2vec (j2v): Train by a set of {JD + top[x] words of CV} 
+  - top[x] words means the recent experience are most relevant
+  - weighted by the labelled score
+  - study the word distance and window size in the calculation
+  
+2. Foreach "Terms" in JD
+  -> Get the top[x] related words from j2v with "1/distance" as the Word Score
+  
+  Example: Term = Web-Developer, Data-Science
+  output Word_Socres: 
+    Web-Developer = {html5:7.5, javascript:6.4, angular:5.3, php:3.1, .....}
+    Data-Science = {python:8.2, machine-learning:7.5, hadoop:6.3,.......}
+    
+3. Foreach CV of top[x] words (top[x] same as j2v training)
+  -> foreach matched_cv_word_cap_by_count[y] in Word_Socres
+      CV_socre += Word_Socres[matched_word]
+      
+   - y: integer of 0..10: cap the score counting of the same word. 0 means no cap
+      
+4. Ranked by the CV scores
+  
+  
+
