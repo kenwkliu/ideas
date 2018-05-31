@@ -1,15 +1,9 @@
 Sentiment Analysis on Whatsapp message (aggregated and related)
-Add VWAP video link
 Machine Learning workflow = Edge of Tomorrow Movie
 
-Add to History of AI: http://houseofbots.com/news-detail/2754-1-a-take-on-deep-learning
-Linear Regressio: https://cdn-images-1.medium.com/max/800/1*j0Y73Gqu8shJ-xwd0dLzog.jpeg
-Decision tree: https://cdn-images-1.medium.com/max/800/1*S10T4ah3_JqdQ-eY6Hau0Q.png
 Random Forest: https://cdn-images-1.medium.com/max/800/1*Sp2xGfv0uw3Nq5Qw7gJ6mw.png
 Feature Extraction: https://cdn-images-1.medium.com/max/1000/1*7n6g6yeEIOrXL6HnybmZdA.jpeg
 Deduction vs Induction: https://cdn-images-1.medium.com/max/800/1*K9wPLf21MuJ04bhO-To_yg.png
-
-Netflix Prize: https://www.netflixprize.com/leaderboard.html
 
 Number of hidden layers and neurons
 https://www.heatonresearch.com/2017/06/01/hidden-layers.html
@@ -57,7 +51,6 @@ Training time (vs predict time) is generally longer and then cross validation is
 Human Data Labeller: https://theinitium.com/article/20180522-mainland-data-annotator/
 
 HK companies from class Web site
-
 
 Misleading example:
 https://www.independent.co.uk/news/world/americas/us-elections/mogia-ai-system-that-correctly-predicted-last-3-us-elections-says-donald-trump-will-win-artificial-a7384671.html?amp
