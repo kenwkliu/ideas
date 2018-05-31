@@ -38,13 +38,28 @@ If a new CV come in that's within the existing top [x], email the notification
 Personalized Search
 Like buillding recommendation system (collaborative filtering)
 
+Expert Rules
+============
+- Meaningful phrase: Java Developer, Marketing Manager (can build a bi-gram collocation extraction tool)
+- Synonymous: Marketing Manager is also Culture manager 
+- Acronym: CFO=Chief Finanical Officer, biz dev=business development
+- Preference: Goldman prepare Morgan Stanley, Credit Suisse
+* Machine Learning can also help to discover the above rules
+
+Matcher 
+====================
+ - auto spell correction
+
+- search queries to Elasticsearch for CVs
+  e.g: {work-exp contains ("Marketing Manager" or "Culture manager")
+        and company contains ("Credit Suisse" or "Morgan Stanely)}
+
+- Contain certain level of fuzziness to expand the search
+
 
 Labelling
 ==========
 - each labelled data should be prepared by at least 2 person for cross checking and reduce variance
-- Meaningful phrase: Java Developer, Marketing Manager (can build a bi-gram collocation extraction tool)
-- Synonymous: Marketing Manager is also Culture manager
-- Preference: Goldman prepare Morgan Stanley, Credit Suisse
 - For each JD/CVs: relevance score (label should be as fine details as possible)
   --> For example: JD desciption is better than general job function (as we can group JD back to job function but not the other way round)
     Relevance score is better than Y/N
@@ -52,13 +67,6 @@ Labelling
 
 Test and Performance metrics
 ============================
-
-
-Matcher Expert Rules
-====================
-search queries to Elasticsearch for CVs
-  e.g: {work-exp contains ("Marketing Manager" or "Culture manager")
-        and company contains ("Credit Suisse" or "Morgan Stanely)}
 
 
 Ranker Algo: job2vec
