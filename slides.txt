@@ -1,4 +1,12 @@
+Sentiment Analysis on Whatsapp message (aggregated and related)
+Add VWAP video link
+
 Add to History of AI: http://houseofbots.com/news-detail/2754-1-a-take-on-deep-learning
+Linear Regressio: https://cdn-images-1.medium.com/max/800/1*j0Y73Gqu8shJ-xwd0dLzog.jpeg
+Decision tree: https://cdn-images-1.medium.com/max/800/1*S10T4ah3_JqdQ-eY6Hau0Q.png
+Random Forest: https://cdn-images-1.medium.com/max/800/1*Sp2xGfv0uw3Nq5Qw7gJ6mw.png
+
+Netflix Prize: https://www.netflixprize.com/leaderboard.html
 
 Number of hidden layers and neurons
 https://www.heatonresearch.com/2017/06/01/hidden-layers.html
@@ -12,7 +20,11 @@ Traditional linguistic like learning grammar from school
 Word Emedding like native speaker (doesn't learn grammar) just pick up on what other people talk
 the keyword correlation (co-occurrence) is like word embedding
 
-Add VWAP video link
+statistics is the science of changing your mind
+Type I error is changing your mind when you shouldn’t.
+Type II error is NOT changing your mind when you should.
+Type I error is like convicting an innocent person and Type II error is like failing to convict a guilty person.
+What’s a Type III error? It’s kind of a statistics joke: it refers to correctly rejecting the wrong null hypothesis. In other words, using all the right math to answer the wrong question.
 
 GAN: reconstruct blurry or pixelated images without seeing the original
 https://news.developer.nvidia.com/ai-can-now-reconstruct-blurry-images/
@@ -40,7 +52,9 @@ HK companies from class Web site
 Misleading example:
 https://www.independent.co.uk/news/world/americas/us-elections/mogia-ai-system-that-correctly-predicted-last-3-us-elections-says-donald-trump-will-win-artificial-a7384671.html?amp
 
-slide 2: Socal Keyword Index 
+slide 2: Social Keyword Index 
+Datatact word correlation (like word embedding) to choose top words for certain things (companies, events etc)
+Calculate the sentiment of those keywords as index
 
 Is it a race between rabbit & tortoise, but tortoise cannot fly (limitation of the model)
 
@@ -188,6 +202,33 @@ This abstract model comes from grounding, comes from the human experience. And t
 
 But because it has no access to abstract rules, it’s not going to be able to generalize strongly.
 
+
+AI Thoughts
+---------
+- Discover from data and only data can provide it
+- you think there is some relation and you want to find "how" (or at least to disapprove your thinking)
+
+- Deep Learning need to learn with fewer data
+
+- Machine Learning with experience in memory (no need to train from the beginning every time), aka accumulate knowledge
+
+- Similar to Algo trading 
+	Not as good as people but cut cost
+		
+	automate some "dealer" ("analysts")
+			
+	something computer is genuinely better (speed and read many data)
+
+Social Media
+------------
+social media companies get ever greater visibility into our lives and minds. At the same time, they gain increasing access to behavioral control vectors — in particular via algorithmic newsfeeds, which control our information consumption
+
+Cat Son's coomments on FB newsfeed, it's like praise your mum for one dish and she cooks the same dishes almost everyday
+
+Predicting Love and Breakups with Facebook Data: https://techcrunch.com/2014/02/14/facebook-love-data/
+
+Misc
+-----
 AlphaGo Video timing and (show and ask) why it take a lot of time to think at the beginning
 sunspring youtube
 
@@ -197,4 +238,4 @@ Classifiers are just complicated if-statements
 
 Machine learning has moved past the high-school sex phase (everyone talking about it, but no one doing it), to a much broader implementations across industries including media.
  
- 
+ “All models are wrong, but some are useful.” — George Box
