@@ -273,25 +273,7 @@ Others
 -------
 Neural nets are just thoughtless fuzzy pattern recognizers, and as useful as fuzzy pattern recognizers can be—hence the rush to integrate them into just about every kind of software—they represent, at best, a limited brand of intelligence, one that is easily fooled.
 
-
-Thoughts
--------
-- Discover from data and only data can provide it
-- you think there is some relation and you want to find "how" (or at least to disapprove your thinking)
-
-- Deep Learning need to learn with fewer data
-
-- Machine Learning with experience in memory (no need to train from the beginning every time), aka accumulate knowledge
-
-- Similar to Algo trading 
-	Not as good as people but cut cost
-		
-	automate some "dealer" ("analysts")
 			
-	something computer is genuinely better (speed and read many data)
-		
-		
-	
 Ideas
 -----
 Volume predict (volatile) -> protect investor 
