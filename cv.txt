@@ -84,5 +84,5 @@ Ranker Algo: job2vec
       
 4. Ranked by the CV scores
   
-  
+- Can we combine with other pre-trained word2vec models (such as skill2vec) with job2vec
 
