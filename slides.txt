@@ -1,7 +1,4 @@
-K-mean clustering example
-https://towardsdatascience.com/using-unsupervised-learning-to-plan-a-paris-vacation-geo-location-clustering-d0337b4210de
-
-Market Basket Image: https://cdn-images-1.medium.com/max/1000/1*ds2nrBDoIYpf1xxe9GI7Bg.jpeg
+Add to History of AI: http://houseofbots.com/news-detail/2754-1-a-take-on-deep-learning
 
 Number of hidden layers and neurons
 https://www.heatonresearch.com/2017/06/01/hidden-layers.html
@@ -13,20 +10,17 @@ https://js.tensorflow.org/
 
 Traditional linguistic like learning grammar from school
 Word Emedding like native speaker (doesn't learn grammar) just pick up on what other people talk
+the keyword correlation (co-occurrence) is like word embedding
 
 Add VWAP video link
 
 GAN: reconstruct blurry or pixelated images without seeing the original
 https://news.developer.nvidia.com/ai-can-now-reconstruct-blurry-images/
 
-Facial Recognition example: Thanks To AI, A 3rd Person Is Arrested Following A Pop Superstar's Concert https://www.npr.org/sections/therecord/2018/05/23/613692526/thanks-to-ai-a-3rd-person-is-arrested-following-a-pop-superstars-concert
-
 Reinforcement Learning: Add JPM Active trading slides
 The Advantage of Doubling: A Deep Reinforcement Learning Approach to Studying the Double Team in the NBA: https://arxiv.org/abs/1803.02940
 
 In Phrasal translate - add the good data source for training (the movie subtitlies) 
-
-Add to History of AI: http://houseofbots.com/news-detail/2754-1-a-take-on-deep-learning
 
 The success of ML project is where the you have has a lot of (good/labelled) data (like Facebook, Google) or you have some unique data that generate from the biz. ML algos are standardized, it's the data that embedd the knowledge and choose suitable model to extract it
 
@@ -42,7 +36,6 @@ Human Data Labeller: https://theinitium.com/article/20180522-mainland-data-annot
 
 HK companies from class Web site
 
-the keyword correlation (co-occurrence) is like word embedding
 
 Misleading example:
 https://www.independent.co.uk/news/world/americas/us-elections/mogia-ai-system-that-correctly-predicted-last-3-us-elections-says-donald-trump-will-win-artificial-a7384671.html?amp
@@ -201,3 +194,7 @@ sunspring youtube
 Quantamental Investing
 
 Classifiers are just complicated if-statements
+
+Machine learning has moved past the high-school sex phase (everyone talking about it, but no one doing it), to a much broader implementations across industries including media.
+ 
+ 
