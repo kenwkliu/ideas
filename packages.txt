@@ -1,0 +1,18 @@
+numpy
+scipy
+pandas
+matplotlib
+seaborn
+boken
+pyMongo
+kafka-python
+nltk
+gensim
+scikit-learn
+xgboost
+Tensorflow
+Keras
+Keras Reinforcement Learning
+Chainer
+Open AI gym
+Arctic TickStore
