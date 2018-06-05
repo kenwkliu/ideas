@@ -1,6 +1,9 @@
+Matlab 2018 - Text Analytics Toolbox
+
 Sentiment Analysis on Whatsapp message (aggregated and related)
 Machine Learning workflow = Edge of Tomorrow Movie
 
+DARPA Explainable AI — Performance vs. Explainability: https://cdn-images-1.medium.com/max/1600/1*74HBY44aMX3nEDVwyFKlxg.png
 Random Forest: https://cdn-images-1.medium.com/max/800/1*Sp2xGfv0uw3Nq5Qw7gJ6mw.png
 Feature Extraction: https://cdn-images-1.medium.com/max/1000/1*7n6g6yeEIOrXL6HnybmZdA.jpeg
 Deduction vs Induction: https://cdn-images-1.medium.com/max/800/1*K9wPLf21MuJ04bhO-To_yg.png
@@ -229,6 +232,14 @@ social media companies get ever greater visibility into our lives and minds. At 
 Cat Son's coomments on FB newsfeed, it's like praise your mum for one dish and she cooks the same dishes almost everyday
 
 Predicting Love and Breakups with Facebook Data: https://techcrunch.com/2014/02/14/facebook-love-data/
+
+Information Theory
+-----------------
+Shannon proposed that the “semantic aspects of data are irrelevant”, and nature and meaning of data doesn’t matter when it comes to information content. Instead he quantified information in terms of probability distribution and “uncertainty”
+
+more inherent uncertainty in the experiment then it has higher entropy
+
+
 
 Misc
 -----
