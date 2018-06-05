@@ -1,19 +1,27 @@
+Data
+-----
 Uncover alternative data from space: https://www.spaceknow.com/
 
-Matlab 2018 - Text Analytics Toolbox
-
+Word Embedding
+-------------
 Traditional linguistic like learning grammar from school
 Word Emedding like native speaker (doesn't learn grammar) just pick up on what other people talk
 the keyword correlation (co-occurrence) is like word embedding
 Sentiment Analysis on Whatsapp message (aggregated and related)
+bi-gram (phrases are more meaningful such as Java Developer, Java Programmer)
 
 JPM - Extracting Sentiment.pdf
 -----------------------------
 word embeddings
 p.14, 16: most similar & disimilar
 p.17,18: word vector addition and substraction
-p.19: comparing corpus (i.e. context)
+p.19, 55(apple): comparing corpus (i.e. context)
 
+
+Matlab 
+-------
+Example to separate training and test data 
+Text Analytics Toolbox
 
 Images
 -------
