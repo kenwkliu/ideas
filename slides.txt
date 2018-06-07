@@ -1,7 +1,3 @@
-Data
------
-Uncover alternative data from space: https://www.spaceknow.com/
-
 Word Embedding
 -------------
 Traditional linguistic like learning grammar from school
@@ -16,7 +12,7 @@ word embeddings
 p.14, 16: most similar & disimilar
 p.17,18: word vector addition and substraction
 p.19, 55(apple): comparing corpus (i.e. context)
-
+p.23: feature pipeline
 
 Matlab 
 -------
@@ -25,7 +21,6 @@ Text Analytics Toolbox
 
 Images
 -------
-Fintech AI: https://cdn-images-1.medium.com/max/1000/1*VoH2Wx_OcM8iylJFmCdTQg.png
 DARPA Explainable AI — Performance vs. Explainability: https://cdn-images-1.medium.com/max/1600/1*74HBY44aMX3nEDVwyFKlxg.png
 Random Forest: https://cdn-images-1.medium.com/max/800/1*Sp2xGfv0uw3Nq5Qw7gJ6mw.png
 Feature Extraction: https://cdn-images-1.medium.com/max/1000/1*7n6g6yeEIOrXL6HnybmZdA.jpeg
