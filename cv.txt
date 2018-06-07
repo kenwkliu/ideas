@@ -69,6 +69,14 @@ Test and Performance metrics
 ============================
 
 
+Data (JDs, CVs) Pre-processing
+==============================
+- to small caps
+- remove symbols, punctations, stop words
+- normalize: Acronym and Synonymous replacement
+- identify phases (bigram, trigram...): java_developer, hr_manager
+
+
 Ranker Algo: job2vec
 ======================
 1. job2vec (j2v): Train by a set of {JD + top[x] words of CV} 
