@@ -101,4 +101,5 @@ Ranker Algo: job2vec
 4. Ranked by the CV scores
   
 - Can we combine with other pre-trained word2vec models (such as skill2vec) with job2vec
-
+- average word embeddings of a phrases now can represent its semantic meaning 
+- use document of paragraph vector instead of word?
