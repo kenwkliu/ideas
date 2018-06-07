@@ -69,3 +69,19 @@ latent semantic analysis
 latent Dirichlet allocation
 Word2vec
 
+Machine Learning Resume Job Matching Solution
+===============================================
+Cluster Features
+- average word embeddings of a phrases now can represent its semantic meaning
+- K-mean method was used to classify phrases into 64 and 128 clusters
+- use LDA to classify resumes into 32 and 64 topics respectively.
+- In all, there are 72 cluster features.
+
+Semantic Features
+- Assume each Chinese phrase as a word and each list of phrases as a sentence, after word2vec training, each Chinese phrase would be presented by a vector of 10 dimension
+
+
+Natural Language Processing with TensorFlow
+===========================================
+WordNet is a lexical database, encoding part-of-speech tag relationships between words including nouns, verbs, adjectives, and adverbs
+
