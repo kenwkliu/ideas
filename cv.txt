@@ -74,7 +74,7 @@ Data (JDs, CVs) Pre-processing
 - to small caps
 - remove symbols, punctations, stop words
 - normalize: Acronym and Synonymous replacement
-- identify phases (bigram, trigram...): java_developer, hr_manager
+- identify phases (bigram, trigram...): java developer -> java_developer; hr manager -> hr_manager
 
 
 Ranker Algo: job2vec
