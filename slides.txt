@@ -1,3 +1,28 @@
+Demos
+-------
+http://ml-playground.com/
+http://arogozhnikov.github.io/2016/04/28/demonstrations-for-ml-courses.html
+https://js.tensorflow.org/
+https://cloud.google.com/natural-language/
+https://cloud.google.com/vision/
+
+Ask Amy: https://www.askus.business.hsbc.com.hk/english/bot.htm?isJSEnabled=1&businessArea=Root&channel=Root&startContext=Root.Cards.Business%20MasterCard
+
+Human Data Labeller: https://theinitium.com/article/20180522-mainland-data-annotator/
+
+Number of hidden layers and neurons
+https://www.heatonresearch.com/2017/06/01/hidden-layers.html
+
+NLP
+---
+Sentiment Analysis on Whatsapp message (aggregated and related)
+bi-gram (phrases are more meaningful such as Java Developer, Java Programmer)
+
+Algo
+----
+Add JPM Active Trading p.10 graph to IS Algo
+
+
 w2v Word Embedding (Context depends on Corpus)
 ------------------------
 - Context: Mary is a very stubborn child. Her pervicacious nature always gets her in trouble: pervicacious is surrounded by stubborn, nature, and trouble
@@ -19,15 +44,6 @@ p.17,18: word vector addition and substraction
 p.19, 55(apple): comparing corpus (i.e. context)
 p.23: feature pipeline
 
-NLP
----
-Sentiment Analysis on Whatsapp message (aggregated and related)
-bi-gram (phrases are more meaningful such as Java Developer, Java Programmer)
-
-Algo
-----
-Add JPM Active Trading p.10 graph to IS Algo
-
 Matlab 
 -------
 Example to separate training and test data 
@@ -40,16 +56,6 @@ Random Forest: https://cdn-images-1.medium.com/max/800/1*Sp2xGfv0uw3Nq5Qw7gJ6mw.
 Feature Extraction: https://cdn-images-1.medium.com/max/1000/1*7n6g6yeEIOrXL6HnybmZdA.jpeg
 Deduction vs Induction: https://cdn-images-1.medium.com/max/800/1*K9wPLf21MuJ04bhO-To_yg.png
 
-Number of hidden layers and neurons
-https://www.heatonresearch.com/2017/06/01/hidden-layers.html
-
-Demos
--------
-http://ml-playground.com/
-http://arogozhnikov.github.io/2016/04/28/demonstrations-for-ml-courses.html
-https://js.tensorflow.org/
-https://cloud.google.com/natural-language/
-https://cloud.google.com/vision/
 
 Feature engineering is more difficult because it’s domain-specific, while learners (ML models) can be largely general-purpose
 
@@ -80,7 +86,7 @@ Just because we have open government data doesn’t mean we don’t have corrupt
 
 Training time (vs predict time) is generally longer and then cross validation is more time consumption when you have big data set to train
 
-Human Data Labeller: https://theinitium.com/article/20180522-mainland-data-annotator/
+
 
 HK companies from class Web site
 
@@ -268,6 +274,16 @@ Shannon proposed that the “semantic aspects of data are irrelevant”, and nat
 
 more inherent uncertainty in the experiment then it has higher entropy
 
+
+Time Series
+-----------
+- “stock index”, was actually modeled using a random walk process (a completely stochastic process), the idea of using historical data as a training set in order to learn the behavior and predict future outcomes is simply not possible
+
+- autocorrelations: the index at time “t+1” is quite likely close to the index at time “t”
+
+- being able to predict the time-differenced data, rather than the data directly, is a much stronger indication of the predictive power of the model
+
+
 Misc
 -----
 AlphaGo Video timing and (show and ask) why it take a lot of time to think at the beginning
@@ -288,3 +304,4 @@ analyst reports our word embeddings are more relevant to equities (the original 
 Machine Learning workflow = Edge of Tomorrow Movie
 
 Bringing powerful data-mining to bear on noisy data tends to result in overfit. That is, the models fit more to the noise than to the signal. This results in inaccurate trading signals.
+
