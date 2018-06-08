@@ -1,16 +1,15 @@
-Word Embedding
--------------
-Traditional linguistic like learning grammar from school
-Word Emedding like native speaker (doesn't learn grammar) just pick up on what other people talk
-the keyword correlation (co-occurrence) is like word embedding
-Steps: https://towardsdatascience.com/light-on-math-machine-learning-intuitive-guide-to-understanding-word2vec-e0128a460f0f
-Demo: use Gensim
-
-NLP
----
-Sentiment Analysis on Whatsapp message (aggregated and related)
-bi-gram (phrases are more meaningful such as Java Developer, Java Programmer)
-
+w2v Word Embedding (Context depends on Corpus)
+------------------------
+- Context: Mary is a very stubborn child. Her pervicacious nature always gets her in trouble: pervicacious is surrounded by stubborn, nature, and trouble
+- learns the meaning of a given word by looking at its context and representing it numerically. By context, we refer to a fixed number of words in front of and behind the word of interest
+- act as a dimensionality reduction technique (compared to one-hot encoding) but they also give a richer feature representation
+- Traditional linguistic like learning grammar from school
+- Word Emedding like native speaker (doesn't learn grammar) just pick up on what other people talk
+- word embedding vs keyword correlation (co-occurrence)
+	multi-dimension vs 1-dimenson: hence can calculate angle and more interesting arithmetic
+	w2v can have the window lenght to capture the "strength" of association
+- Steps: https://towardsdatascience.com/light-on-math-machine-learning-intuitive-guide-to-understanding-word2vec-e0128a460f0f
+- Demo: use Gensim
 
 JPM - Extracting Sentiment.pdf
 -----------------------------
@@ -19,6 +18,11 @@ p.14, 16: most similar & disimilar
 p.17,18: word vector addition and substraction
 p.19, 55(apple): comparing corpus (i.e. context)
 p.23: feature pipeline
+
+NLP
+---
+Sentiment Analysis on Whatsapp message (aggregated and related)
+bi-gram (phrases are more meaningful such as Java Developer, Java Programmer)
 
 Algo
 ----
