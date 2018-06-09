@@ -3,25 +3,16 @@ Demos
 http://ml-playground.com/
 http://arogozhnikov.github.io/2016/04/28/demonstrations-for-ml-courses.html
 https://js.tensorflow.org/
-https://cloud.google.com/natural-language/
-https://cloud.google.com/vision/
-
-Ask Amy: https://www.askus.business.hsbc.com.hk/english/bot.htm?isJSEnabled=1&businessArea=Root&channel=Root&startContext=Root.Cards.Business%20MasterCard
-
-Human Data Labeller: https://theinitium.com/article/20180522-mainland-data-annotator/
-
-Number of hidden layers and neurons
-https://www.heatonresearch.com/2017/06/01/hidden-layers.html
 
 NLP
 ---
-Sentiment Analysis on Whatsapp message (aggregated and related)
-bi-gram (phrases are more meaningful such as Java Developer, Java Programmer)
+TF-IDF ranking is that a document importance grows with the local frequency and global rarity of its terms
 
-Algo
-----
-Add JPM Active Trading p.10 graph to IS Algo
+Tf-idf: term frequency-inverse document frequency, and the tf-idf weight is a weight often used in information retrieval and text mining. This weight is a statistical measure used to evaluate how important a word is to a document in a collection or corpus. The importance increases proportionally to the number of times a word appears in the document but is offset by the frequency of the word in the corpus. 
 
+  Example: Consider a document containing 100 words wherein the word cat appears 3 times. The term frequency (i.e., tf) for cat is then (3 / 100) = 0.03. Now, assume we have 10 million documents and the word cat appears in one thousand of these. Then, the inverse document frequency (i.e., idf) is calculated as log(10,000,000 / 1,000) = 4. Thus, the Tf-idf weight is the product of these quantities: 0.03 * 4 = 0.12.
+
+- In Phrasal translate - add the good data source for training (the movie subtitlies) 
 
 w2v Word Embedding (Context depends on Corpus)
 ------------------------
@@ -51,7 +42,6 @@ Text Analytics Toolbox
 
 Images
 -------
-DARPA Explainable AI — Performance vs. Explainability: https://cdn-images-1.medium.com/max/1600/1*74HBY44aMX3nEDVwyFKlxg.png
 Random Forest: https://cdn-images-1.medium.com/max/800/1*Sp2xGfv0uw3Nq5Qw7gJ6mw.png
 Feature Extraction: https://cdn-images-1.medium.com/max/1000/1*7n6g6yeEIOrXL6HnybmZdA.jpeg
 Deduction vs Induction: https://cdn-images-1.medium.com/max/800/1*K9wPLf21MuJ04bhO-To_yg.png
@@ -74,8 +64,6 @@ https://news.developer.nvidia.com/ai-can-now-reconstruct-blurry-images/
 Reinforcement Learning: Add JPM Active trading slides 
 The Advantage of Doubling: A Deep Reinforcement Learning Approach to Studying the Double Team in the NBA: https://arxiv.org/abs/1803.02940
 
-In Phrasal translate - add the good data source for training (the movie subtitlies) 
-
 The success of ML project is where the you have has a lot of (good/labelled) data (like Facebook, Google) or you have some unique data that generate from the biz. ML algos are standardized, it's the data that embedd the knowledge and choose suitable model to extract it
 
 Some Big Data techniquies are solving internet scale data volume and growth and doesn't mean you will use it directly
@@ -85,10 +73,6 @@ AI replace jobs, works 3-day a week: Social Issues -> Socially solve;  tech is t
 Just because we have open government data doesn’t mean we don’t have corruption
 
 Training time (vs predict time) is generally longer and then cross validation is more time consumption when you have big data set to train
-
-
-
-HK companies from class Web site
 
 Misleading example:
 https://www.independent.co.uk/news/world/americas/us-elections/mogia-ai-system-that-correctly-predicted-last-3-us-elections-says-donald-trump-will-win-artificial-a7384671.html?amp
@@ -103,16 +87,6 @@ Trading:
 - Trader said, retail driven market 5, 10 price will be thick queue, place a tick above -> data of hidden psychology
 - Shorter the duration - easier to predict. Combined signals, combinatorial, grid search
 - Many mini Black swan (long tail event) rip off the small profit(s)
-
-Word2Vec show in Text Similarity: http://projector.tensorflow.org/
-Demo the Gensim example
-
-TF-IDF ranking is that a document importance grows with the local frequency and global rarity of its terms
-
-Tf-idf: term frequency-inverse document frequency, and the tf-idf weight is a weight often used in information retrieval and text mining. This weight is a statistical measure used to evaluate how important a word is to a document in a collection or corpus. The importance increases proportionally to the number of times a word appears in the document but is offset by the frequency of the word in the corpus. 
-
-  Example: Consider a document containing 100 words wherein the word cat appears 3 times. The term frequency (i.e., tf) for cat is then (3 / 100) = 0.03. Now, assume we have 10 million documents and the word cat appears in one thousand of these. Then, the inverse document frequency (i.e., idf) is calculated as log(10,000,000 / 1,000) = 4. Thus, the Tf-idf weight is the product of these quantities: 0.03 * 4 = 0.12.
-
 
 ITG
 ---
