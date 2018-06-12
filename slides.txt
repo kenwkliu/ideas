@@ -7,7 +7,6 @@ AWS Slides
 22 Better chatbot
 34 GPU image
 
-
 Demos
 -------
 Use QR code: https://www.the-qrcode-generator.com/
@@ -15,11 +14,15 @@ http://ml-playground.com/
 http://arogozhnikov.github.io/2016/04/28/demonstrations-for-ml-courses.html
 https://js.tensorflow.org/
 
+HK Related
+-----------
+http://www.scmp.com/business/banking-finance/article/2150150/standard-chartered-says-it-will-apply-operate-virtual-bank
 
 w2v Word Embedding (Context depends on Corpus)
 ------------------------
 - Context: Mary is a very stubborn child. Her pervicacious nature always gets her in trouble: pervicacious is surrounded by stubborn, nature, and trouble
 - learns the meaning of a given word by looking at its context and representing it numerically. By context, we refer to a fixed number of words in front of and behind the word of interest
+- ‘a word is characterized by the company it keeps’.
 - act as a dimensionality reduction technique (compared to one-hot encoding) but they also give a richer feature representation
 - Traditional linguistic like learning grammar from school
 - Word Emedding like native speaker (doesn't learn grammar) just pick up on what other people talk
@@ -46,6 +49,7 @@ Text Analytics Toolbox
 
 Images
 -------
+Plutchik's wheel of emotion: http://evome.co/wp-content/uploads/2017/05/thewheel.jpg
 Random Forest: https://cdn-images-1.medium.com/max/800/1*Sp2xGfv0uw3Nq5Qw7gJ6mw.png
 Feature Extraction: https://cdn-images-1.medium.com/max/1000/1*7n6g6yeEIOrXL6HnybmZdA.jpeg
 Deduction vs Induction: https://cdn-images-1.medium.com/max/800/1*K9wPLf21MuJ04bhO-To_yg.png
@@ -271,6 +275,13 @@ Building the Software 2.0 Stack
 --------------------------------
 52. Amout of lost sleep over
 54-75. challenges in labelling dataset
+
+
+Training Dataset
+---------------
+variation
+relation
+
 
 Misc
 -----
