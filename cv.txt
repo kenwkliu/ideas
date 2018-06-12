@@ -40,11 +40,11 @@ Like buillding recommendation system (collaborative filtering)
 
 Expert Rules
 ============
-- Meaningful phrase: Java Developer, Marketing Manager (can build a bi-gram collocation extraction tool)
-- Synonymous: Marketing Manager is also Culture manager 
-- Acronym: CFO=Chief Finanical Officer, biz dev=business development
-- Preference: Goldman prepare Morgan Stanley, Credit Suisse
-* Machine Learning can also help to discover the above rules
+- Identify meaningful phrases: Java-Developer, Marketing-Manager 
+- Synonymous: Marketing Manager=Culture manager; Mandarin=Putonghua  
+- Acronym: CFO=Chief Finanical Officer; biz dev=business development
+- Expansion: Chinese=Cantonese,Mandarin
+* Machine Learning can also help to discover the above rules (e.g use bi/tri-gram frequency to extract it)
 
 Matcher 
 ====================
@@ -72,6 +72,7 @@ Test and Performance metrics
 Data (JDs, CVs) Pre-processing
 ==============================
 - to small caps
+- spelling corrected
 - remove symbols, punctations, stop words
 - normalize: Acronym and Synonymous replacement
 - identify phases (bigram, trigram...): java developer -> java_developer; hr manager -> hr_manager
