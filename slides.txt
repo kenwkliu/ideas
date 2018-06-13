@@ -1,5 +1,6 @@
 - In Phrasal translate - add the good data source for training (the movie subtitlies) 
 - Wearables like smart watch (measure Pulse, Blood pressure): https://www.mpo-mag.com/issues/2017-06-01/view_columns/the-future-of-medical-wearables/
+- use whatsapp msg to train chatbot
 
 AWS Slides
 ---------
@@ -32,7 +33,7 @@ w2v Word Embedding (Context depends on Corpus)
 - Steps: https://towardsdatascience.com/light-on-math-machine-learning-intuitive-guide-to-understanding-word2vec-e0128a460f0f
 - Demo: use Gensim or Tensorflow with tensorboard
 - structured skip-gram: capture the "strength" of association by considering word positions
-
+- https://multithreaded.stitchfix.com/blog/2015/03/11/word-is-worth-a-thousand-vectors/ : ITEM_3469' + 'pregnant' example
 
 JPM - Extracting Sentiment.pdf
 -----------------------------
