@@ -100,7 +100,7 @@ Ranker Algo: job2vec
    - y: integer of 0..10: cap the score counting of the same word. 0 means no cap
       
 4. Ranked by the CV scores
-  
-- Can we combine with other pre-trained word2vec models (such as skill2vec) with job2vec
-- average word embeddings of a phrases now can represent its semantic meaning 
-- use document of paragraph vector instead of word?
+
+- Multipe w2v models (like by function, company etc)
+- Combine with other pre-trained w2v models (such as skill2vec) with job2vec
+- Average Word Embeddings (AWE) or Average of w2v or doc2vec or paragraph2vec
