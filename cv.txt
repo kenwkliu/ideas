@@ -104,3 +104,11 @@ Ranker Algo: job2vec
 - Multipe w2v models (like by function, company etc)
 - Combine with other pre-trained w2v models (such as skill2vec) with job2vec
 - Average Word Embeddings (AWE) or Average of w2v or doc2vec or paragraph2vec
+
+Implementation
+===============
+- Where's the Elasticsearch server (ESS)
+- What language/APIs to access ESS
+- Another field in ESS to store pre-processed CVs and JDs
+- Collections to store expert rules
+- EDA data (top bi-grams, TF-IDF, BoW, w2v)
