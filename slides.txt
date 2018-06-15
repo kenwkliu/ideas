@@ -285,6 +285,15 @@ Building the Software 2.0 Stack
 54-75. challenges in labelling dataset
 
 
+Stats
+------
+likelihood (asking about the parameter values) vs probability (asking about the data) 
+	- the likelihood of the parameters μ and σ taking certain values given that we’ve observed a bunch of data
+	- the probability density of observing the data with model parameters μ and σ
+	
+Bayesian: allows us to use some knowledge or belief that we already have (commonly known as the prior) to help us calculate the probability of a related event
+
+
 Training Dataset
 ---------------
 variation
