@@ -40,9 +40,9 @@ Like buillding recommendation system (collaborative filtering)
 
 Expert Rules
 ============
-- Identify meaningful phrases: Java-Developer, Marketing-Manager 
-- Synonymous: Marketing Manager=Culture manager; Mandarin=Putonghua  
-- Acronym: CFO=Chief Finanical Officer; biz dev=business development
+- Identify meaningful phrases: java-developer, marketing-manager, executive-director 
+- Synonymous: Marketing Manager=culture-manager; mandarin=putonghua  
+- Acronym: CFO=chief-finanical-officer; biz dev=business-development, md=mananging-director, otb=open-to-buy
 - Expansion: Chinese=Cantonese,Mandarin
 * Machine Learning can also help to discover the above rules (e.g use bi/tri-gram frequency to extract it)
 
