@@ -239,6 +239,14 @@ This abstract model comes from grounding, comes from the human experience. And t
 
 But because it has no access to abstract rules, it’s not going to be able to generalize strongly.
 
+- Imbalance dataset, Precision vs Recall
+
+Deep Learning Challenges
+---------------------------
+- Data hungry (need lot of quality data set)
+- Not generalize well (need to see many variation)
+--> Compare this to human learning to cross the road
+
 
 AI Thoughts
 ---------
@@ -327,8 +335,10 @@ https://economictimes.indiatimes.com/markets/stocks/news/jpmorgan-brings-amazons
 
 https://www.investopedia.com/news/jim-rogers-launches-aidriven-etf/
 
-Deep Learning Challenges
----------------------------
-- Data hungry (need lot of quality data set)
-- Not generalize well (need to see many variation)
---> Compare this to human learning to cross the road
+State of AI - 201806
+--------------------
+13: The Information Theory: First memorise the data, then forget what doesn’t help the model make predictions
+40-43: Fairness in machine learning: How do we ensure our models are not biased?
+53: AI to automate away AI engineers. Google’s AutoML automatically discovers the best model architecture
+72: Vendor AI cloud services
+85: Privacy preservation and data anonymisation
