@@ -326,3 +326,9 @@ News
 https://economictimes.indiatimes.com/markets/stocks/news/jpmorgan-brings-amazons-alexa-to-wall-street-trading-floors/articleshow/63541706.cms?from=mdr
 
 https://www.investopedia.com/news/jim-rogers-launches-aidriven-etf/
+
+Deep Learning Challenges
+---------------------------
+- Data hungry (need lot of quality data set)
+- Not generalize well (need to see many variation)
+--> Compare this to human learning to cross the road
