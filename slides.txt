@@ -349,11 +349,9 @@ China Internet Report
 6-10: Chinese companies
 13-14: BAT
 17-18: Social Apps (Social Group Buy, incentive based sharing) *** Add to slide-1
-39-40: WeChat mini-program
+39-40: WeChat mini-program so that can leverage WeChat Pay and the ecosystem
 45: Bike-sharing, used to be more than 40
 52: Facial Reg examples
 53: Farming (running chicken == tamagotchi)
 76: fintech
-
-
 
