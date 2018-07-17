@@ -342,3 +342,18 @@ State of AI - 201806
 53: AI to automate away AI engineers. Google’s AutoML automatically discovers the best model architecture
 72: Vendor AI cloud services
 85: Privacy preservation and data anonymisation
+
+China Internet Report
+---------------------
+5: Top China (incl HK) startup cities
+6-10: Chinese companies
+13-14: BAT
+17-18: Social Apps (Social Group Buy, incentive based sharing) *** Add to slide-1
+39-40: WeChat mini-program
+45: Bike-sharing, used to be more than 40
+52: Facial Reg examples
+53: Farming (running chicken == tamagotchi)
+76: fintech
+
+
+
