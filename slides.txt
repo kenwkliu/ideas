@@ -21,7 +21,7 @@ http://www.scmp.com/business/banking-finance/article/2150150/standard-chartered-
 
 NLP
 ---
-Chinese segmentation vs English Prases-identification
+Chinese segmentation vs English Prases-identification (collocation)
 
 
 w2v Word Embedding (Context depends on Corpus)
@@ -361,6 +361,9 @@ News
 https://economictimes.indiatimes.com/markets/stocks/news/jpmorgan-brings-amazons-alexa-to-wall-street-trading-floors/articleshow/63541706.cms?from=mdr
 
 https://www.investopedia.com/news/jim-rogers-launches-aidriven-etf/
+
+http://www.marketing-interactive.com/bloomberg-and-twitter-to-incorporate-financially-relevant-content-into-trading/?utm_campaign=20180719_mktdaily&utm_medium=email&utm_source=HK&utm_content=listing
+
 
 State of AI - 201806
 --------------------
