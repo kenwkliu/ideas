@@ -30,10 +30,25 @@ w2v Word Embedding (Context depends on Corpus)
 - word embedding vs keyword correlation (co-occurrence)
 	multi-dimension vs 1-dimenson: hence can calculate angle and more interesting arithmetic
 	w2v have the window lenght to determine the "relevant" context
+
 - Steps: https://towardsdatascience.com/light-on-math-machine-learning-intuitive-guide-to-understanding-word2vec-e0128a460f0f
-- Demo: use Gensim or Tensorflow with tensorboard
+
+- Demo: Gensim with tensorboard visualize
+
 - structured skip-gram: capture the "strength" of association by considering word positions
+
 - https://multithreaded.stitchfix.com/blog/2015/03/11/word-is-worth-a-thousand-vectors/ : ITEM_3469' + 'pregnant' example
+
+- http://p.migdal.pl/2017/01/06/king-man-woman-queen-why.html
+  Pointwise mutual information (PMI): how much more likely we get a pair than if it were at random
+  (vectorize words to a certain dimension is a compression) compression is lossy may give it an advantage, as it can discover patterns rather than only memorize each pair. For example, in recommendation systems for movie ratings, each rating is approximated by a scalar product of two vectors - a movie’s content and a user’s preference. This is used to predict scores for as yet unseen movies
+   word2vec is not a single task or algorithm; popular ones are:
+	Skip-Gram Negative-Sampling (implicit compression of PMI: factorizes a word-context PMI matrix),
+	Skip-Gram Noise-Contrastive Training (implicit compression of conditional probability),
+	GloVe (explicit compression of co-occurrences)
+
+- https://nlpers.blogspot.com/2016/06/language-bias-and-black-sheep.html
+  co-occurance frequencies of words definitely do not reflect co-occurance frequencies of things in the real world (e.g. trying to model a "default" as something that doesn't appear won't work)
 
 JPM - Extracting Sentiment.pdf
 -----------------------------
@@ -240,6 +255,8 @@ This abstract model comes from grounding, comes from the human experience. And t
 But because it has no access to abstract rules, it’s not going to be able to generalize strongly.
 
 - Imbalance dataset, Precision vs Recall
+
+- GPU: training batch size: speed (parellelism) vs memory
 
 Deep Learning Challenges
 ---------------------------
