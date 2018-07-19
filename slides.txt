@@ -18,6 +18,8 @@ https://js.tensorflow.org/
 HK Related
 -----------
 http://www.scmp.com/business/banking-finance/article/2150150/standard-chartered-says-it-will-apply-operate-virtual-bank
+Open API Framework for the Banking Sector and the Launch of Open API on HKMA’s Website
+Hong Kong stock exchange enlists AI in fight against rule breakers
 
 NLP
 ---
