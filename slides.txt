@@ -1,6 +1,9 @@
+Data and Apps
+-------------
 - In Phrasal translate - add the good data source for training (the movie subtitlies) 
 - Wearables like smart watch (measure Pulse, Blood pressure): https://www.mpo-mag.com/issues/2017-06-01/view_columns/the-future-of-medical-wearables/
 - use whatsapp msg to train chatbot
+- Moblie payment transation used for in credit risk modelling
 
 AWS Slides
 ---------
