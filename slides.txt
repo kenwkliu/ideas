@@ -105,6 +105,19 @@ Feature Extraction: https://cdn-images-1.medium.com/max/1000/1*7n6g6yeEIOrXL6Hny
 Deduction vs Induction: https://cdn-images-1.medium.com/max/800/1*K9wPLf21MuJ04bhO-To_yg.png
 
 
+Performance, Metrics and Misleading Examples
+-----------------------------------------------
+Using accuracy as measurements is not a good idea with unbalanced data
+
+https://www.independent.co.uk/news/world/americas/us-elections/mogia-ai-system-that-correctly-predicted-last-3-us-elections-says-donald-trump-will-win-artificial-a7384671.html?amp
+
+https://towardsdatascience.com/how-to-lie-with-data-science-5090f3891d9c
+	Feature engineering/selection leaks
+	Dependent data leak
+	Chance/Luck
+	
+
+
 Trading
 -------
 - Trader said, retail driven market 5, 10 price will be thick queue, place a tick above -> data of hidden psychology
@@ -258,9 +271,6 @@ Just because we have open government data doesn’t mean we don’t have corrupt
 Training time (vs predict time) is generally longer and then cross validation is more time consumption when you have big data set to train
 
 Is it a race between rabbit & tortoise, but tortoise cannot fly (limitation of the model)
-
-Misleading example:
-https://www.independent.co.uk/news/world/americas/us-elections/mogia-ai-system-that-correctly-predicted-last-3-us-elections-says-donald-trump-will-win-artificial-a7384671.html?amp
 
 Andrew Ng has gone on the record stating that worrying about superintelligence is like worrying about overpopulation on Mars. One day, humanity is likely to reach Mars. When enough people land on Mars, overcrowding will likely exist and may even be a very serious problem. None of this changes the fact that Mars today is an empty wasteland.
 
