@@ -1,0 +1,7 @@
+The JD trained model lookup
+
+Write the phraser output to Mongo
+
+Persist the trainied 400 word per JD
+
+Persist Global TF-IDF
