@@ -8,7 +8,6 @@ Data and Apps
 AWS Slides
 ---------
 11 Amazon 95 ML
-22 Better chatbot
 34 GPU image
 
 Demos
@@ -116,7 +115,6 @@ https://towardsdatascience.com/how-to-lie-with-data-science-5090f3891d9c
 	Dependent data leak
 	Chance/Luck
 	
-
 
 Trading
 -------
