@@ -59,6 +59,8 @@ w2v Word Embedding (Context depends on Corpus)
 - https://nlpers.blogspot.com/2016/06/language-bias-and-black-sheep.html
   co-occurance frequencies of words definitely do not reflect co-occurance frequencies of things in the real world (e.g. trying to model a "default" as something that doesn't appear won't work)
 
+- A vector is worth thousands of words
+
 TF-IDF
 -----
 - often used in information retrieval and text mining. This weight is a statistical measure used to evaluate how important a word is to a document in a collection or corpus. 
