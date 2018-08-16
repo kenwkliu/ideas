@@ -1,16 +1,13 @@
 Python
 -------
 - Show a package info (or nothing if not installed)	
-
 	pip show pandas
 		
 - Upgrade package
-
 	pip install pandas --upgrade
 	pip install pandas --upgrade --force-reinstall 
 	
 - list installed package
-
 	pip list
 	
 -- uninstall	
@@ -19,15 +16,15 @@ Python
 - Convert glove to gensim	
 	python -m gensim.scripts.glove2word2vec --input glove.twitter.27B.100d.txt --output glove.twitter.27B.100d.w2v
 
-
 	
 Mongo
 ------
+mongoexport --host host:port --db nlp --collection jds --out jds.json
+
 mongod --dbpath D:\kenl\mongo\data
 mongod --config D:\kenl\mongo\mongod.cfg
 
 show dbs
-
 use sampledb
 
 db.users.count()
