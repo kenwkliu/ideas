@@ -7,7 +7,6 @@ Data and Apps
 
 AWS Slides
 ---------
-11 Amazon 95 ML
 34 GPU image
 
 Demos
