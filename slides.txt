@@ -328,12 +328,6 @@ Time Series
 - being able to predict the time-differenced data, rather than the data directly, is a much stronger indication of the predictive power of the model
 
 
-Building the Software 2.0 Stack
---------------------------------
-52. Amout of lost sleep over
-54-75. challenges in labelling dataset
-
-
 Stats
 ------
 likelihood (asking about the parameter values) vs probability (asking about the data) 
