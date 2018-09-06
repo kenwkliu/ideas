@@ -21,6 +21,7 @@ HK Related
 http://www.scmp.com/business/banking-finance/article/2150150/standard-chartered-says-it-will-apply-operate-virtual-bank
 Open API Framework for the Banking Sector and the Launch of Open API on HKMA’s Website
 Hong Kong stock exchange enlists AI in fight against rule breakers
+https://www.nanalyze.com/2018/08/top-10-artificial-intelligence-startups-hong-kong/
 
 NLP
 ---
