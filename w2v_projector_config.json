@@ -3,11 +3,11 @@
     {
       "tensorName": "My tensor",
       "tensorShape": [
-        3,
-        3
+        1000,
+        50
       ],
-      "tensorPath": "https://drive.google.com/file/d/1F4CIXD-BeE8tO4iKgz2tDQLazgc1FLNZ/view?usp=sharing",
-      "metadataPath": "https://drive.google.com/file/d/1sOPfUibbM_V-S1n8GDAUjQDSIbaHTIZL/view?usp=sharing"
+      "tensorPath": "https://gist.githubusercontent.com/kenwkliu/a222faeeb6adac36b8df7fc155bcd9ae/raw/814e983484ea15996cd9df22b92c648fb8ca232e/gistfile1.txt",
+      "metadataPath": "https://gist.githubusercontent.com/kenwkliu/cad39d577f3501e27691114c2eeaadf8/raw/03bf91733b2553f8edb82104bdd350c9fcf7a841/w2v-meta.tsv"
     }
   ]
 }
