@@ -1,13 +1,13 @@
 {
   "embeddings": [
     {
-      "tensorName": "My tensor",
+      "tensorName": "Family",
       "tensorShape": [
         3,
         3
       ],
-      "tensorPath": "https://drive.google.com/uc?export=download&id=1F4CIXD-BeE8tO4iKgz2tDQLazgc1FLNZ",
-      "metadataPath": "https://drive.google.com/uc?export=download&id=1sOPfUibbM_V-S1n8GDAUjQDSIbaHTIZL"
+      "tensorPath": "http://datatact.com/w2v/w2v.tsv",
+      "metadataPath": "http://datatact.com/w2v/w2v-meta.tsv"
     }
   ]
 }
