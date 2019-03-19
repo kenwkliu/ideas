@@ -6,8 +6,8 @@
         3,
         3
       ],
-      "tensorPath": "http://datatact.com/w2v/w2v.tsv",
-      "metadataPath": "http://datatact.com/w2v/w2v-meta.tsv"
+      "tensorPath": "ftp://datatact.com/w2v/w2v.tsv",
+      "metadataPath": "ftp://datatact.com/w2v/w2v-meta.tsv"
     }
   ]
 }
