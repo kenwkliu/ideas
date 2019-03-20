@@ -1,0 +1,13 @@
+{
+  "embeddings": [
+    {
+      "tensorName": "Datatact",
+      "tensorShape": [
+        3,
+        3
+      ],
+      "tensorPath": "http://datatact.com/w2v/w2v.txt",
+      "metadataPath": "http://datatact.com/w2v/w2v-meta.txt"
+    }
+  ]
+}
