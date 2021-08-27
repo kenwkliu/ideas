@@ -1,3 +1,5 @@
+import numpy as np
+
 def addSignal(backTest_df, params):
   backTest_df['ratio'] = backTest_df[params['PAIR_STOCK_A']] / backTest_df[params['PAIR_STOCK_B']]
 
