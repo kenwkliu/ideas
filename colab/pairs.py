@@ -1,47 +1,24 @@
 import numpy as np
 
-def addSignal(backTest_df, params):
-  backTest_df['ratio'] = backTest_df[params['PAIR_STOCK_A']] / backTest_df[params['PAIR_STOCK_B']]
+# based on the data from "Reserch period, 
+# back test the result in "Test period"
+def backTest(researchData, testData, stockA, stockB):
+  cols = [stockA, stockB]
+  research_df = researchData[cols].copy()
+  backTest_df = testData[cols].copy()
 
-  # signal == -1: Long A Short B
-  # signal == 1: Short A Long B
-  backTest_df['signal'] = 0
-  backTest_df['pSignal'] = np.nan
-  backTest_df['nSignal'] = np.nan
-  signal = 0
+  # Remove the NaN rows
+  research_df.dropna(inplace = True)
+  backTest_df.dropna(inplace = True)
 
-  for index, row in backTest_df.iterrows():
-    pxRatio = row['ratio']
+  backTest_df = addSignal(research_df, backTest_df, stockA, stockB)
+  pnl, backTest_df = calcPnl(backTest_df)
 
-    if pxRatio > params['shortA_longB_ratio']:
-      signal = 1
-
-    elif pxRatio < params['longA_shortB_ratio']:
-      signal = -1
-
-    else:
-      if signal == 1 and pxRatio > params['avgPxRatio']:
-        signal = 1
-
-      elif signal == -1 and pxRatio < params['avgPxRatio']: 
-        signal = -1
-
-      else:
-        signal = 0
-
-    backTest_df.loc[index, 'signal'] = signal
-
-    # pSignal and nSignal is for displaying the plot marker
-    if signal == 1:
-      backTest_df.loc[index, 'pSignal'] = pxRatio
-
-    elif signal == -1:
-      backTest_df.loc[index, 'nSignal'] = pxRatio
-
-  return backTest_df
+  return pnl, backTest_df
 
 
-# PnL related
+
+### PnL related
 def getLongPos(signal, longValue, row):
   if longValue == 0 or signal == 0 : return 0
   if signal == -1: return longValue / row[0]
@@ -66,7 +43,7 @@ def getShortValue(signal, shortPos, row):
   if signal == 1: return shortPos * row[0]
 
 
-def calcPnl(backTest_df, params):
+def calcPnl(backTest_df, dollarValue=10000):
   backTest_df[['longPos', 'shortPos', 'longValue', 'shortValue', 'longPnl', 'shortPnl', 'pnl', 'totalPnl']] = 0
   signal, longPos, shortPos, longValue, shortValue, longPnl, shortPnl, pnl, accumPnl, totalPnl = 0, 0, 0, 0, 0, 0 ,0, 0, 0, 0
 
@@ -77,15 +54,17 @@ def calcPnl(backTest_df, params):
       if currentSignal == 0:
         longValue = 0
         shortValue = 0
-
+		
       else:      
-        longValue = params['dollarValue']
-        shortValue = params['dollarValue']
+        longValue = dollarValue
+        shortValue = dollarValue
 
       longPos = getLongPos(currentSignal, longValue, row)
       shortPos = getShortPos(currentSignal, shortValue, row)
+
       longPnl = 0
       shortPnl = 0
+
       pnl = 0
       accumPnl = totalPnl
 
@@ -113,18 +92,5 @@ def calcPnl(backTest_df, params):
 
     signal = currentSignal
 
-  return backTest_df
-
-
-# back test the result in "Test period"
-def backTest(testStocks, params):
-  cols = [params['PAIR_STOCK_A'], params['PAIR_STOCK_B']]
-  backTest_df = testStocks[cols].copy()
-
-  # Remove the NaN rows
-  backTest_df.dropna(inplace = True)
-
-  backTest_df = addSignal(backTest_df, params)
-  backTest_df = calcPnl(backTest_df, params)
-
-  return backTest_df
+  finalPnl = backTest_df['totalPnl'].iloc[-1]
+  return finalPnl, backTest_df
