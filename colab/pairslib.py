@@ -31,12 +31,12 @@ def calcPnl(backTest_df):
 
 		if currentSignal != signal:
 			if currentSignal == 0:
-			longValue = 0
-			shortValue = 0
+				longValue = 0
+				shortValue = 0
 
 			else:
-			longValue = row['dollarValue']
-			shortValue = row['dollarValue']
+				longValue = row['dollarValue']
+				shortValue = row['dollarValue']
 
 		longPos = getLongPos(currentSignal, longValue, row)
 		shortPos = getShortPos(currentSignal, shortValue, row)
