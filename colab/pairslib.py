@@ -1,3 +1,5 @@
+import pandas as pd
+
 # Calculate the PnL of the Pair portfolio
 def calcPortfolio(pairsBackTest):
 	portfolio = []
@@ -38,14 +40,14 @@ def calcPnl(backTest_df):
 				longValue = row['dollarValue']
 				shortValue = row['dollarValue']
 
-		longPos = getLongPos(currentSignal, longValue, row)
-		shortPos = getShortPos(currentSignal, shortValue, row)
+			longPos = getLongPos(currentSignal, longValue, row)
+			shortPos = getShortPos(currentSignal, shortValue, row)
 
-		longPnl = 0
-		shortPnl = 0
+			longPnl = 0
+			shortPnl = 0
 
-		pnl = 0
-		accumPnl = totalPnl
+			pnl = 0
+			accumPnl = totalPnl
 
 		#Store current row value
 		pnl_df.loc[index, 'longPos'] = longPos
