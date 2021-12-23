@@ -1,0 +1,65 @@
+stockA,stockB,corr,sector_A,sector_B,sameSector
+XINYI SOLAR,FLAT GLASS,0.986801473,Photovoltaic Solar,Glass strands,FALSE
+MEIDONG AUTO,MEITUAN-W,0.981319539,Auto sales,E-commerce and Internet,FALSE
+ZIJIN MINING,MAN WAH HLDGS,0.976941674,Precious metals,Housewares,FALSE
+ZHONGSHENG HLDG,TENCENT,0.973715699,Auto sales,Online and Mobile Games,FALSE
+XINYI GLASS,XINYI SOLAR,0.97329109,Glass strands,Photovoltaic Solar,FALSE
+ZHONGSHENG HLDG,MEITUAN-W,0.973142862,Auto sales,E-commerce and Internet,FALSE
+MAN WAH HLDGS,XIAOMI-W,0.969718979,Housewares,Telecommunications Equipment,FALSE
+YIHAI INTL,CG SERVICES,0.968768468,Food and beverage Production and Wholesale,Property Management and Agent,FALSE
+TECHTRONIC IND,MEITUAN-W,0.968416907,Machinery,E-commerce and Internet,FALSE
+XINYI SOLAR,GREATWALL MOTOR,0.967858579,Photovoltaic Solar,Automobile,FALSE
+XINYI SOLAR,WUXI BIO,0.967565995,Photovoltaic Solar,Biotechnology,FALSE
+WUXI APPTEC,PHARMARON,0.967106354,Healthcare,Biotechnology,FALSE
+MENGNIU DAIRY,ZIJIN MINING,0.967066847,Dairy related,Precious metals,FALSE
+MENGNIU DAIRY,MAN WAH HLDGS,0.966671311,Dairy related,Housewares,FALSE
+WUXI BIO,MAN WAH HLDGS,0.966552307,Biotechnology,Housewares,FALSE
+XIAOMI-W,XINYI GLASS,0.965877792,Telecommunications Equipment,Glass strands,FALSE
+XINYI GLASS,FLAT GLASS,0.965540743,Glass strands,Glass strands,TRUE
+TENCENT,MEITUAN-W,0.963576251,Online and Mobile Games,E-commerce and Internet,FALSE
+LI NING,XINYI GLASS,0.963567159,Sporting Goods,Glass strands,FALSE
+WUXI BIO,XIAOMI-W,0.963405116,Biotechnology,Telecommunications Equipment,FALSE
+LI NING,WUXI BIO,0.963319441,Sporting Goods,Biotechnology,FALSE
+KINGDEE INT'L,CHINA YOUZAN,0.963153944,Technology and Software,E-commerce and Internet,FALSE
+WUXI APPTEC,KINGDEE INT'L,0.963019854,Healthcare,Technology and Software,FALSE
+MEITUAN-W,PHARMARON,0.962855011,E-commerce and Internet,Biotechnology,FALSE
+XINYI GLASS,GREATWALL MOTOR,0.962672904,Glass strands,Automobile,FALSE
+XIAOMI-W,ZIJIN MINING,0.962244809,Telecommunications Equipment,Precious metals,FALSE
+HKTV,BYD ELECTRONIC,0.961994905,Film and TV,Mobile phone related,FALSE
+WUXI BIO,PHARMARON,0.960931929,Biotechnology,Biotechnology,TRUE
+MEIDONG AUTO,ZHONGSHENG HLDG,0.959991171,Auto sales,Auto sales,TRUE
+MAN WAH HLDGS,XINYI SOLAR,0.959882051,Housewares,Photovoltaic Solar,FALSE
+CITIC BANK,PICC P&C,0.959138077,small and medium China banks,China Insurance,FALSE
+ZIJIN MINING,XINYI GLASS,0.958546731,Precious metals,Glass strands,FALSE
+TECHTRONIC IND,MEIDONG AUTO,0.957322139,Machinery,Auto sales,FALSE
+ICBC,BANK OF CHINA,0.957265975,State-owned China banks,State-owned China banks,TRUE
+HANG SENG BANK,HSBC HOLDINGS,0.957251177,Bank,Bank,TRUE
+KINGDEE INT'L,PHARMARON,0.956752182,Technology and Software,Biotechnology,FALSE
+XINYI GLASS,MAN WAH HLDGS,0.956701149,Glass strands,Housewares,FALSE
+CITIC BANK,BANK OF CHINA,0.956669412,small and medium China banks,State-owned China banks,FALSE
+WUXI BIO,XINYI GLASS,0.955623233,Biotechnology,Glass strands,FALSE
+LI NING,BYD COMPANY,0.955307813,Sporting Goods,Automobile,FALSE
+XINYI SOLAR,XIAOMI-W,0.955117369,Photovoltaic Solar,Telecommunications Equipment,FALSE
+XINYI SOLAR,BYD COMPANY,0.955061481,Photovoltaic Solar,Automobile,FALSE
+CHINA YOUZAN,WUXI APPTEC,0.954898607,E-commerce and Internet,Healthcare,FALSE
+TSINGTAO BREW,HKEX,0.954819369,Alcoholic Beverages,Other financial services,FALSE
+PHARMARON,MEIDONG AUTO,0.954686018,Biotechnology,Auto sales,FALSE
+HKEX,MEITUAN-W,0.954514147,Other financial services,E-commerce and Internet,FALSE
+GEELY AUTO,ZIJIN MINING,0.954460418,Automobile,Precious metals,FALSE
+MEILAN AIRPORT,EVERG HEALTH,0.954363952,Aviation Services,Media Entertainment Culture Publishing,FALSE
+HKEX,TENCENT,0.95393304,Other financial services,Online and Mobile Games,FALSE
+ZIJIN MINING,WUXI BIO,0.95386245,Precious metals,Biotechnology,FALSE
+WUXI BIO,BYD COMPANY,0.953583928,Biotechnology,Automobile,FALSE
+TIANNENG POWER,CSC,0.952555958,Battery Unit,Other financial services,FALSE
+GREATWALL MOTOR,BYD COMPANY,0.952274131,Automobile,Automobile,TRUE
+TIANNENG POWER,MICROPORT,0.952179184,Battery Unit,Healthcare,FALSE
+CHINASOFT INT'L,ZIJIN MINING,0.952154076,Technology and Software,Precious metals,FALSE
+HAIDILAO,BYD ELECTRONIC,0.952089693,Catering,Mobile phone related,FALSE
+LI NING,XINYI SOLAR,0.951751314,Sporting Goods,Photovoltaic Solar,FALSE
+WUXI BIO,KINGDEE INT'L,0.951278654,Biotechnology,Technology and Software,FALSE
+ANTA SPORTS,LI NING,0.951152269,Sporting Goods,Sporting Goods,TRUE
+GREATWALL MOTOR,ZIJIN MINING,0.950889209,Automobile,Precious metals,FALSE
+CG SERVICES,EVERSUNSHINE LS,0.950751096,Property Management and Agent,Property Management and Agent,TRUE
+WUXI APPTEC,TENCENT,0.950549105,Healthcare,Online and Mobile Games,FALSE
+GEELY AUTO,CHINASOFT INT'L,0.950322817,Automobile,Technology and Software,FALSE
+HUABAO INTL,CHINA YOUZAN,0.950271249,Food and beverage Production and Wholesale,E-commerce and Internet,FALSE
