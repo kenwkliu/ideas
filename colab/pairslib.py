@@ -1,48 +1,58 @@
 import pandas as pd
 
+TRADING_DAYS_IN_YEARS = 256
+
 # Calculate the PnL of the Pair portfolio
 def calcPortfolio(pairsBackTest):
 	portfolio = []
 	portfolioPnl = 0
 
 	for backtestDf in pairsBackTest:
-		pnl, pnlDf = calcPnl(backtestDf)
-
+		stats, pnlDf = calcPnl(backtestDf)
+		pnl = stats['tradingPnL'] - stats['shortInterest'] - stats['transCost']
+		
 		stockA = backtestDf.columns[0]
 		stockB = backtestDf.columns[1]
-		print(stockA, 'vs', stockB, '---> $', pnl)
+		print("{} vs {} ---> ${}".format(stockA, stockB, pnl))
 
-		portfolio.append([stockA, stockB, pnl])
+		portfolio.append([stockA, stockB, stats['tradingPnL'], stats['shortInterest'], stats['transCost'], pnl])
 		portfolioPnl += pnl
 
 	print("=================================================================")
 	print('PortfolioPnl: $', portfolioPnl)
-	portfolioDf = pd.DataFrame(portfolio, columns=['stockA', 'stocksB', 'Pnl'])
+	portfolioDf = pd.DataFrame(portfolio, columns=['stockA', 'stocksB', 'tradingPnL', 'shortInterest', 'transCost', 'Pnl'])
 	return portfolioPnl, portfolioDf
 
 
 # Calculate the PnL of one Pair
-def calcPnl(backTest_df):
+def calcPnl(backTest_df, interestRate=0.03, commRate=0.005):
+	dailyInterestRate = interestRate / TRADING_DAYS_IN_YEARS
 	pnl_df = backTest_df.copy()
 
-	pnl_df[['longPos', 'shortPos', 'longValue', 'shortValue', 'longPnl', 'shortPnl', 'pnl', 'totalPnl']] = 0
-	signal, longPos, shortPos, longValue, shortValue, longPnl, shortPnl, pnl, accumPnl, totalPnl = 0, 0, 0, 0, 0, 0 ,0, 0, 0, 0
+	pnl_df[['longPos', 'shortPos', 'longValue', 'shortValue', 'longPnl', 'shortPnl', 'shortInterest', 'transCost', 'pnl', 'totalPnl']] = 0
+	signal, longPos, shortPos, longValue, shortValue, longPnl, shortPnl, shortInterest, transCost, pnl, accumPnl, totalPnl = 0, 0, 0, 0, 0, 0, 0 ,0, 0, 0, 0, 0
 
 	for index, row in pnl_df.iterrows():
 		currentSignal = row['signal']
-
+		transCost = 0
+		
+		# When trading signal is changed
 		if currentSignal != signal:
 			if currentSignal == 0:
+				transCost = (curentLongValue + curentShortValue) * commRate
 				longValue = 0
 				shortValue = 0
 
 			else:
 				longValue = row['dollarValue']
 				shortValue = row['dollarValue']
+				transCost = (longValue + shortValue) * commRate
 
 			longPos = getLongPos(currentSignal, longValue, row)
 			shortPos = getShortPos(currentSignal, shortValue, row)
 
+			
+			
 			longPnl = 0
 			shortPnl = 0
 
@@ -50,6 +60,8 @@ def calcPnl(backTest_df):
 			accumPnl = totalPnl
 
 		#Store current row value
+		pnl_df.loc[index, 'transCost'] = transCost
+		
 		pnl_df.loc[index, 'longPos'] = longPos
 		pnl_df.loc[index, 'shortPos'] = shortPos
 
@@ -65,6 +77,13 @@ def calcPnl(backTest_df):
 		currentShortPnl = shortValue - curentShortValue
 		pnl_df.loc[index, 'shortPnl'] = currentShortPnl
 
+		if curentShortValue > 0:
+			curentShortInterest = row['dollarValue'] * dailyInterestRate
+		else:
+			curentShortInterest = 0
+
+		pnl_df.loc[index, 'shortInterest'] = curentShortInterest
+
 		currentPnl = currentLongPnl + currentShortPnl
 		pnl_df.loc[index, 'pnl'] = currentPnl
 
@@ -73,8 +92,14 @@ def calcPnl(backTest_df):
 
 		signal = currentSignal
 
-	finalPnl = pnl_df['totalPnl'].iloc[-1]
-	return finalPnl, pnl_df
+	tradingPnL = pnl_df['totalPnl'].iloc[-1]
+	
+	stats = {}
+	stats['tradingPnL'] = tradingPnL
+	stats['shortInterest'] = pnl_df['shortInterest'].sum()
+	stats['transCost'] = pnl_df['transCost'].sum()
+	
+	return stats, pnl_df
 
 
 def getLongPos(signal, longValue, row):
