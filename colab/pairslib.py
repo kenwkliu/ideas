@@ -3,12 +3,12 @@ import pandas as pd
 TRADING_DAYS_IN_YEARS = 256
 
 # Calculate the PnL of the Pair portfolio
-def calcPortfolio(pairsBackTest):
+def calcPortfolio(pairsBackTest, interestRate=0.03, commRate=0.005):
 	portfolio = []
 	portfolioPnl = 0
 
 	for backtestDf in pairsBackTest:
-		stats, pnlDf = calcPnl(backtestDf)
+		stats, pnlDf = calcPnl(backtestDf, interestRate, commRate)
 		pnl = stats['tradingPnL'] - stats['shortInterest'] - stats['transCost']
 		
 		stockA = backtestDf.columns[0]
