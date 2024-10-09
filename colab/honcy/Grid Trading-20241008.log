@@ -1,0 +1,103 @@
+2024-10-08T02:13:09.923 INFO sell: Sold 8.0 of PERP_AVAX_USDT @ 27.028
+2024-10-08T02:13:49.630 INFO http_server: GET /imparity - {}
+2024-10-08T02:13:49.631 INFO get_new_diff: long side price 26.2831 - 26.2932, short side price 27.0070 - 27.0160, diff -0.0116 - -0.0109
+2024-10-08T02:13:50.951 INFO http_server: GET /portfolio - {}
+2024-10-08T02:31:08.217 INFO http_server: GET /imparity - {}
+2024-10-08T02:31:08.219 INFO get_new_diff: long side price 26.2687 - 26.2763, short side price 26.9830 - 26.9840, diff -0.0110 - -0.0106
+2024-10-08T02:31:09.873 INFO http_server: GET /portfolio - {}
+2024-10-08T02:49:57.081 INFO update_setting: Updated, base profit is 0.004, position limit is 10
+2024-10-08T03:09:00.416 INFO http_server: GET /imparity - {}
+2024-10-08T03:09:00.418 INFO get_new_diff: long side price 26.4573 - 26.4646, short side price 27.0740 - 27.0820, diff -0.0074 - -0.0069
+2024-10-08T03:09:02.449 INFO http_server: GET /imparity - {}
+2024-10-08T03:09:02.450 INFO get_new_diff: long side price 26.4573 - 26.4639, short side price 27.0800 - 27.0820, diff -0.0074 - -0.0071
+2024-10-08T03:09:03.922 INFO http_server: GET /imparity - {}
+2024-10-08T03:09:03.922 INFO get_new_diff: long side price 26.4554 - 26.4621, short side price 27.0740 - 27.0790, diff -0.0074 - -0.0070
+2024-10-08T03:09:30.022 INFO http_server: GET /imparity - {}
+2024-10-08T03:09:30.022 INFO get_new_diff: long side price 26.4580 - 26.4621, short side price 27.1050 - 27.1180, diff -0.0087 - -0.0081
+2024-10-08T03:09:31.692 INFO http_server: GET /portfolio - {}
+2024-10-08T03:15:08.519 INFO http_server: GET /imparity - {}
+2024-10-08T03:15:08.521 INFO get_new_diff: long side price 26.4217 - 26.4311, short side price 27.0840 - 27.0870, diff -0.0090 - -0.0085
+2024-10-08T03:15:10.705 INFO http_server: GET /portfolio - {}
+2024-10-08T03:33:01.217 ERROR __run_health_checks: woo market data feed is disconnected - if this persists please contact us
+2024-10-08T03:47:45.907 INFO http_server: GET /portfolio - {}
+2024-10-08T03:47:46.582 INFO http_server: GET /imparity - {}
+2024-10-08T03:47:46.582 INFO get_new_diff: long side price 26.4363 - 26.4411, short side price 27.0960 - 27.0980, diff -0.0088 - -0.0086
+2024-10-08T03:47:49.080 INFO http_server: GET /imparity - {}
+2024-10-08T03:47:49.080 INFO get_new_diff: long side price 26.4351 - 26.4398, short side price 27.0960 - 27.0980, diff -0.0089 - -0.0086
+2024-10-08T04:06:53.369 INFO http_server: GET /imparity - {}
+2024-10-08T04:06:53.371 INFO get_new_diff: long side price 26.4734 - 26.4810, short side price 27.1130 - 27.1140, diff -0.0080 - -0.0077
+2024-10-08T04:06:55.289 INFO http_server: GET /portfolio - {}
+2024-10-08T04:06:56.470 INFO http_server: GET /portfolio - {}
+2024-10-08T04:17:17.187 INFO http_server: GET /imparity - {}
+2024-10-08T04:17:17.189 INFO get_new_diff: long side price 26.4625 - 26.4685, short side price 27.0850 - 27.0870, diff -0.0074 - -0.0071
+2024-10-08T04:17:18.355 INFO http_server: GET /portfolio - {}
+2024-10-08T04:17:19.768 INFO http_server: GET /portfolio - {}
+2024-10-08T04:17:35.636 INFO http_server: GET /imparity - {}
+2024-10-08T04:17:35.637 INFO get_new_diff: long side price 26.4766 - 26.4814, short side price 27.0850 - 27.0900, diff -0.0070 - -0.0066
+2024-10-08T04:30:45.393 INFO place_order: Stop profit #10, low long at -0.011713380095947773, stop at -0.006083301888755915
+2024-10-08T04:30:45.396 INFO place_order: deque([-0.010142062724954076, -0.00860593859074385, -0.007097681998135069, -0.0055821361770530264, -0.004071747842850332])
+2024-10-08T04:30:45.750 INFO sell: Sold 229.0 of PERP_ARB_USDT @ 0.557
+2024-10-08T04:30:46.087 INFO sell: Sold 50.0 of PERP_OP_USDT @ 1.69
+2024-10-08T04:30:46.417 INFO buy: Bought 8.0 of PERP_AVAX_USDT @ 27.096
+2024-10-08T04:38:47.547 INFO http_server: GET /imparity - {}
+2024-10-08T04:38:47.549 INFO get_new_diff: long side price 26.3950 - 26.3991, short side price 27.0430 - 27.0460, diff -0.0085 - -0.0082
+2024-10-08T04:38:49.547 INFO http_server: GET /portfolio - {}
+2024-10-08T04:51:09.795 INFO http_server: GET /imparity - {}
+2024-10-08T04:51:09.797 INFO get_new_diff: long side price 26.2870 - 26.2924, short side price 26.8910 - 26.8940, diff -0.0069 - -0.0066
+2024-10-08T04:51:10.837 INFO http_server: GET /portfolio - {}
+2024-10-08T04:55:15.519 INFO http_server: GET /imparity - {}
+2024-10-08T04:55:15.521 INFO get_new_diff: long side price 26.2967 - 26.3008, short side price 26.9130 - 26.9140, diff -0.0073 - -0.0071
+2024-10-08T05:05:28.555 INFO http_server: GET /imparity - {}
+2024-10-08T05:05:28.558 INFO get_new_diff: long side price 26.2415 - 26.2450, short side price 26.8350 - 26.8400, diff -0.0066 - -0.0063
+2024-10-08T05:05:39.318 INFO http_server: GET /imparity - {}
+2024-10-08T05:05:39.318 INFO get_new_diff: long side price 26.2155 - 26.2238, short side price 26.8120 - 26.8220, diff -0.0070 - -0.0063
+2024-10-08T05:05:40.144 INFO http_server: GET /portfolio - {}
+2024-10-08T05:09:34.695 INFO http_server: GET /portfolio - {}
+2024-10-08T05:09:35.578 INFO http_server: GET /imparity - {}
+2024-10-08T05:09:35.578 INFO get_new_diff: long side price 26.1761 - 26.1831, short side price 26.7680 - 26.7720, diff -0.0066 - -0.0062
+2024-10-08T05:09:36.995 INFO http_server: GET /portfolio - {}
+2024-10-08T05:10:43.149 INFO http_server: GET /imparity - {}
+2024-10-08T05:10:43.149 INFO get_new_diff: long side price 26.1578 - 26.1648, short side price 26.7450 - 26.7470, diff -0.0064 - -0.0060
+2024-10-08T05:10:46.970 INFO http_server: GET /portfolio - {}
+2024-10-08T05:19:05.677 INFO place_order: Stop profit #11, low long at -0.010142062724954076, stop at -0.004138929409311348
+2024-10-08T05:19:05.680 INFO place_order: deque([-0.00860593859074385, -0.007097681998135069, -0.0055821361770530264, -0.004071747842850332])
+2024-10-08T05:19:06.017 INFO sell: Sold 229.0 of PERP_ARB_USDT @ 0.551
+2024-10-08T05:19:06.348 INFO sell: Sold 50.0 of PERP_OP_USDT @ 1.6652
+2024-10-08T05:19:06.672 INFO buy: Bought 8.0 of PERP_AVAX_USDT @ 26.71
+2024-10-08T05:19:57.058 INFO update_setting: Updated, base profit is 0.0035, position limit is 5
+2024-10-08T05:51:10.915 INFO http_server: GET /imparity - {}
+2024-10-08T05:51:10.916 INFO get_new_diff: long side price 26.0158 - 26.0205, short side price 26.5300 - 26.5510, diff -0.0045 - -0.0035
+2024-10-08T05:51:13.450 INFO http_server: GET /portfolio - {}
+2024-10-08T05:53:43.008 INFO http_server: GET /imparity - {}
+2024-10-08T05:53:43.010 INFO get_new_diff: long side price 25.9678 - 25.9737, short side price 26.5060 - 26.5070, diff -0.0046 - -0.0044
+2024-10-08T05:54:35.648 INFO http_server: GET /imparity - {}
+2024-10-08T05:54:35.648 INFO get_new_diff: long side price 25.9544 - 25.9610, short side price 26.5010 - 26.5020, diff -0.0050 - -0.0047
+2024-10-08T05:54:36.661 INFO http_server: GET /portfolio - {}
+2024-10-08T06:03:23.196 INFO place_order: Stop profit #12, low long at -0.00860593859074385, stop at -0.0026986788602546274
+2024-10-08T06:03:23.198 INFO place_order: deque([-0.007097681998135069, -0.0055821361770530264, -0.004071747842850332])
+2024-10-08T06:03:23.507 INFO sell: Sold 229.0 of PERP_ARB_USDT @ 0.5492
+2024-10-08T06:03:23.836 INFO sell: Sold 50.0 of PERP_OP_USDT @ 1.6476
+2024-10-08T06:03:24.148 INFO buy: Bought 8.0 of PERP_AVAX_USDT @ 26.507
+2024-10-08T06:04:05.455 INFO http_server: GET /imparity - {}
+2024-10-08T06:04:05.456 INFO get_new_diff: long side price 26.0227 - 26.0297, short side price 26.5050 - 26.5080, diff -0.0026 - -0.0022
+2024-10-08T06:04:07.831 INFO http_server: GET /portfolio - {}
+2024-10-08T06:06:31.771 INFO http_server: GET /imparity - {}
+2024-10-08T06:06:31.773 INFO get_new_diff: long side price 25.9363 - 25.9427, short side price 26.4020 - 26.4110, diff -0.0022 - -0.0016
+2024-10-08T06:06:33.887 INFO http_server: GET /portfolio - {}
+2024-10-08T06:07:31.303 INFO http_server: GET /imparity - {}
+2024-10-08T06:07:31.303 INFO get_new_diff: long side price 25.9520 - 25.9580, short side price 26.4090 - 26.4180, diff -0.0019 - -0.0013
+2024-10-08T06:07:34.345 INFO http_server: GET /imparity - {}
+2024-10-08T06:07:34.345 INFO get_new_diff: long side price 25.9621 - 25.9662, short side price 26.4110 - 26.4220, diff -0.0017 - -0.0011
+2024-10-08T06:07:36.284 INFO http_server: GET /imparity - {}
+2024-10-08T06:07:36.284 INFO get_new_diff: long side price 25.9633 - 25.9674, short side price 26.4180 - 26.4250, diff -0.0017 - -0.0013
+2024-10-08T06:07:43.577 INFO http_server: GET /imparity - {}
+2024-10-08T06:07:43.577 INFO get_new_diff: long side price 25.9561 - 25.9596, short side price 26.4010 - 26.4090, diff -0.0014 - -0.0010
+2024-10-08T06:07:48.808 INFO http_server: GET /portfolio - {}
+2024-10-08T06:08:01.924 INFO place_order: Stop profit #13, low long at -0.007097681998135069, stop at -0.0007881392871150472
+2024-10-08T06:08:01.924 INFO place_order: deque([-0.0055821361770530264, -0.004071747842850332])
+2024-10-08T06:08:02.287 INFO sell: Sold 229.0 of PERP_ARB_USDT @ 0.548
+2024-10-08T06:08:02.583 INFO sell: Sold 50.0 of PERP_OP_USDT @ 1.6395
+2024-10-08T06:08:02.888 INFO buy: Bought 8.0 of PERP_AVAX_USDT @ 26.37
+2024-10-08T06:36:48.547 INFO http_server: GET /imparity - {}
+2024-10-08T06:36:48.549 INFO get_new_diff: long side price 26.0790 - 26.0837, short side price 26.5390 - 26.5420, diff -0.0017 - -0.0014
+2024-10-08T06:36:50.867 INFO http_server: GET /portfolio - {}
